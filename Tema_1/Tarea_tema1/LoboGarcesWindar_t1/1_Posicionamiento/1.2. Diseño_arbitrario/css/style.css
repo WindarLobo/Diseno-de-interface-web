@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  position: absolute;
+  border: 2px solid black;
+  margin-top: 50px;
+}
+.uno {
+  left: 80px;
+  width: 180px;
+  height: 100px;
+  background-color: rgb(251, 248, 200);
+}
+.dos {
+  left: 180px;
+  top: 80px;
+  width: 150px;
+  height: 160px;
+  background-color: rgb(197, 233, 150);
+}
+.tres {
+  left: 80px;
+  top: 160px;
+  width: 350px;
+  height: 90px;
+  background-color: rgb(195, 227, 255);
+}
+.cuatro {
+  left: 380px;
+  width: 80px;
+  height: 200px;
+  background-color: rgb(245, 221, 243);
+}

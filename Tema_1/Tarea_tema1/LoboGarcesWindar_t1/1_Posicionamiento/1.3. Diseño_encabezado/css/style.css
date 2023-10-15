@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 800px;
+  height: 150px;
+  border: 2px solid black;
+  position: relative;
+  margin-top: 150px;
+  margin-left: 20%;
+}
+
+.logo {
+  position: absolute;
+  border: 1px solid black;
+  top: 20px;
+  left: 20px;
+  width: 280px;
+  height: 60px;
+  background-color: #e0f1f3;
+}
+
+.top-nav {
+  position: absolute;
+  border: 1px solid black;
+  top: 20px;
+  left: 630px;
+  width: 150px;
+  height: 25px;
+  background-color: #e2beec;
+}
+
+.menu {
+  position: absolute;
+  border: 1px solid black;
+  bottom: 20px;
+  left: 280px;
+  width: 500px;
+  height: 25px;
+  background-color: #f6f7c1;
+}

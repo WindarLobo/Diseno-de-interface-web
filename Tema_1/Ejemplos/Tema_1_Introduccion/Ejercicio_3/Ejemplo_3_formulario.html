@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tema 1 - Ejercicio 3</title>
+  </head>
+  <body>
+    <div class="container">
+    <h1>Formulario de reserva de viaje</h1>
+
+<h3>* significa campo obligado</h3>
+<form action="Ejemplo_3_formulario" method="get" target="_blank">
+  <label>Nombre completo *:</label><br>
+  <input
+    type="text"
+    name="Nombre completo"
+    placeholder="Nombre Apellidos"
+    autofocus="autofocus"
+    value=""
+    required
+  />
+<br>
+ <label> Email*:</label><br>
+ <input type=" text" name="Email" value="" required />
+<br>
+<label>
+  Selecciona el paquete vacacional*:</label><br>
+  <select name="menu">
+    <option value="Goa" >Goa</options>
+    <option value="Kashmir" >Cachemira</options>
+    <option value="Rajasthan" >Rajastán</options> 
+  </select><br>
+<label>
+  Fecha de llegada*:</label> <br>
+  <input type="date">
+<br>
+<label>
+  Numero de personas*:</label><br>
+  <input
+  type="text"
+  name="Numero de personas"
+  value=""
+  required
+/>
+<br>
+<label>¿Que extra quieres reservar?*</label>
+<br>
+  Facturacion <input type="checkbox" name="Facturacion" value="embarque"><br>
+  Pension Completa <input type="checkbox" name="Pension Completa" value=comida"><br>
+  Visita guiada  <input type="checkbox" name="Visita guiada" value="pasear"><br>
+  <label>Cupon de descuento:</label><br>
+  <input type="text" name="Descuento"  value=""/><br>
+  <label>Terminos y condiciones*</label><br>
+  <input type="radio" name="boton" value="1">Acepto
+  <input type="radio" name="boton" value="2">No Acepto <br>
+  <button type="submit" class="btn btn-large btn-primary" name="submit">Completar Reserva</button>
+
+</form>
+</div>
+</body>
+</html>

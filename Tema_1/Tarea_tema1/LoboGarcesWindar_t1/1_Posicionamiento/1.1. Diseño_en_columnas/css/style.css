@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: absolute;
+  width: 50px;
+  height: 200px;
+  border: 2px solid black;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.uno {
+  left: 70px;
+  background-color: rgb(251, 248, 200);
+}
+
+.dos {
+  left: 140px;
+  background-color: rgb(207, 242, 201);
+}
+
+.tres {
+  left: 210px;
+  background-color: rgb(193, 212, 240);
+}
+
+.cuatro {
+  left: 280px;
+  background-color: rgb(247, 210, 211);
+}
