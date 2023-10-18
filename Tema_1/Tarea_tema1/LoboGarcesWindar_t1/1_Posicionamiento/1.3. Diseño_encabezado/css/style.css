@@ -1,15 +1,14 @@
-body {
+* {
   margin: 0;
   padding: 0;
 }
-
 .header {
   width: 800px;
   height: 150px;
   border: 2px solid black;
   position: relative;
   margin-top: 150px;
-  margin-left: 20%;
+  margin-left: 25%;
 }
 
 .logo {
