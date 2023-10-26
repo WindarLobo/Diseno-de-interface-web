@@ -8,10 +8,13 @@
   height: 200px;
   border: 2px solid black;
   text-align: center;
-  margin: 50px auto;
-  margin-left: 35%;
+  margin: 130px auto;
 }
-
+.container-a {
+  width: 400px;
+  margin: 0 auto;
+  position: relative;
+}
 .uno {
   left: 70px;
   background-color: rgb(251, 248, 200);

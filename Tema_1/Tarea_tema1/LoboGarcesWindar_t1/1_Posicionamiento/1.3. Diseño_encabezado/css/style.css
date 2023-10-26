@@ -3,40 +3,43 @@
   padding: 0;
 }
 .header {
-  width: 800px;
+  width: 600px;
   height: 150px;
   border: 2px solid black;
   position: relative;
-  margin-top: 150px;
-  margin-left: 25%;
+  margin: 250px auto;
+  background-color: rgb(209, 209, 220);
 }
 
 .logo {
+  padding-left: 10px;
   position: absolute;
-  border: 1px solid black;
+  border: 2px solid black;
   top: 20px;
   left: 20px;
-  width: 280px;
+  width: 220px;
   height: 60px;
   background-color: #e0f1f3;
 }
 
 .top-nav {
+  padding-left: 10px;
   position: absolute;
-  border: 1px solid black;
+  border: 2px solid black;
   top: 20px;
-  left: 630px;
+  left: 420px;
   width: 150px;
   height: 25px;
   background-color: #e2beec;
 }
 
 .menu {
+  padding-left: 10px;
   position: absolute;
-  border: 1px solid black;
+  border: 2px solid black;
   bottom: 20px;
-  left: 280px;
-  width: 500px;
+  left: 230px;
+  width: 340px;
   height: 25px;
   background-color: #f6f7c1;
 }

@@ -16,7 +16,18 @@ body {
   color: #7e63f9;
   text-transform: uppercase;
 }
-
+.img1 {
+  background-image: url("../img/coffee.jpg");
+  background-size: cover;
+  width: 800px;
+  height: 350px;
+}
+.img2 {
+  background-image: url("../img/fashion.jpg");
+  background-size: cover;
+  width: 800px;
+  height: 350px;
+}
 .row {
   margin-right: 300px;
 }
