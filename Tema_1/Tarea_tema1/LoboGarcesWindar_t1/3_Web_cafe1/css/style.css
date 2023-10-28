@@ -2,14 +2,15 @@
   margin: 0;
   padding: 0;
 }
-.bg-light {
-  background-color: #323232 !important;
-}
 
 h2 {
   color: rgba(248, 245, 245, 0.9);
   font-size: 3rem;
   font-family: "Gabarito", sans-serif;
+  background-color: #323232 !important;
+  margin-bottom: -1px;
+  height: 75px;
+  padding-left: 2%;
 }
 h5 {
   font-family: "Noto Sans", sans-serif;
