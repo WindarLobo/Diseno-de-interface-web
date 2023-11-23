@@ -1,0 +1,27 @@
+body {
+  width: 100vw;
+  height: 90vh;
+}
+.animable {
+  font-size: 30px;
+  color: black;
+  background-color: lightcoral;
+
+  animation-name: ejemplo-1;
+  animation-duration: 10s;
+}
+
+@keyframes ejemplo-1 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  33% {
+    transform: rotateZ(45deg);
+  }
+  66% {
+    transform: rotateZ(90deg);
+  }
+  100% {
+    transform: rotateZ(180deg);
+  }
+}

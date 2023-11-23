@@ -1,0 +1,20 @@
+body {
+  width: 100vw;
+  height: 90vh;
+  position: relative;
+}
+.transitionable {
+  position: absolute;
+  font-size: 30px;
+
+  left: 100px;
+  color: black;
+  background-color: lightcoral;
+
+  transition-property: left;
+  transition-timing-function: cubic-bezier(0.29, 1.88, 0.74, -8.87);
+  transition-duration: 10s;
+}
+.transitionable:hover {
+  left: 500px;
+}
