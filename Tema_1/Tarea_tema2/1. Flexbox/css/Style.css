@@ -1,0 +1,42 @@
+.contenedor {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.contenedor > * {
+  padding: 10px;
+  margin: 10px;
+  flex: 1 100%;
+  border: 1px solid #ccc;
+}
+
+.A {
+  min-height: 30px;
+  background-color: rgb(225, 207, 153);
+}
+
+.B {
+  flex: 2;
+  min-height: 30px;
+  padding: 10px;
+  background-color: rgb(177, 230, 230);
+}
+
+.C {
+  min-height: 150px;
+  background-color: rgb(230, 177, 191);
+  max-width: 1000px;
+}
+
+.D {
+  flex: 2;
+  min-height: 30px;
+  background-color: rgb(177, 180, 230);
+}
+
+.E {
+  min-height: 30px;
+  background-color: rgb(178, 230, 177);
+}
