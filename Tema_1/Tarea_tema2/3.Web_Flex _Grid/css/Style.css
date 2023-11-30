@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  background: linear-gradient(100deg, rgb(191, 79, 181), royalblue);
+  color: aliceblue;
+}
+
+header {
+  background: linear-gradient(100deg, rgb(153, 39, 144), royalblue);
+  color: #fff;
+  padding: 8px;
+  display: grid;
+  row-gap: 10px;
+  column-gap: 10px;
+  font-size: 15px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin-right: 20px;
+}
+
+#menu-toggle {
+  display: none; /* Oculta el checkbox de forma predeterminada */
+}
+
+.menu-icon {
+  font-size: 1.5em;
+  cursor: pointer;
+  display: none;
+  margin: 10px; /* Oculta el icono en tamaños de pantalla mayores */
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos del menú verticalmente */
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center; /* Centra los elementos del menú horizontalmente */
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.social-icons {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 85px; /* Ajusta el espacio entre los iconos según tu preferencia */
+}
+
+/* Media Query para tamaños de pantalla más pequeños */
+@media screen and (max-width: 500px) {
+  .navbar {
+    display: none; /* Oculta la barra de navegación en tamaños de pantalla más pequeños */
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    border: 1px solid #000;
+    background: linear-gradient(100deg, rgb(153, 39, 144), royalblue);
+  }
+
+  #menu-toggle:checked ~ .navbar {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block; /* Muestra el icono en tamaños de pantalla más pequeños */
+  }
+
+  label {
+    cursor: pointer;
+  }
+}
