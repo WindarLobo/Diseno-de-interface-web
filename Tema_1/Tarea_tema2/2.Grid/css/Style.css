@@ -1,67 +1,82 @@
 * {
   margin: 0;
   padding: 0;
-
-  font-family: Arial, sans-serif;
 }
-.container {
-  margin: 90px;
+.container-item {
+  max-width: 500px;
+
+  margin: 50px auto;
   display: grid;
-  grid-template-columns: 60px 30px;
-  grid-template-rows: auto;
   grid-template-areas:
-    "x x x  y"
-    "x x x  y"
-    "z z . ."
-    "z z   m m "
-    "z z  m m "
-    "z z  m m "
-    "z z  m m "
-    "z z  m m"
-    "z z  m m "
-    "z z . . ";
-  grid-gap: 40px;
+    "a a a a .  . b b "
+    "a a a a . .  b b "
+    "a a a a . .  b b  "
+    "a a a a . .  b b  "
+    "a a a a . .  b b  "
+    "a a a a . .  b b  "
+    "c c .  . . . . . "
+    "c c .  . . . . . "
+    "c c  .  d d d d . "
+    "c c  .  d d d d . "
+    "c c  .  d d d d . "
+    "c c  .  d d d d . "
+    "c c  .  d d d d . "
+    "c c  .  d d d d . "
+    "c c  .  d d d d . "
+    "c c  .  d d d d . "
+    "c c . .  . . . . "
+    "c c .  . . . . . ";
+
+  row-gap: 15px;
+  column-gap: 10px;
 }
 
 .item {
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 20px;
-  border: 1px solid #ccc;
-  align-content: space-around;
 }
 
 .A {
-  grid-area: x;
+  grid-area: a;
   color: aliceblue;
   background-color: rgb(31, 29, 29);
 }
 
 .B {
-  grid-area: y;
+  grid-area: b;
   color: aliceblue;
   background-color: rgb(31, 29, 29);
 }
 
 .C {
-  grid-area: z;
+  grid-area: c;
   color: aliceblue;
   background-color: rgb(31, 29, 29);
 }
 
 .D {
-  grid-area: m;
+  grid-area: d;
   background-color: rgb(31, 29, 29);
   display: grid;
 
   grid-template-areas:
-    "e  . f f "
-    "e  .  . g "
-    "e  .  . g"
-    "e  .  . g "
-    "e  .  . g"
-    "e .  .  g"
-    "e  . .  g"
-    "e . .  g";
+    "e  f f f f f f f f f "
+    "e  f f f f f f f f f "
+    "e  f f f f f f f f f "
+    "e  . . . . . . . . . "
+    "e  . . . . . . . . . "
+    "e  . . . . . . . . . "
+    "e  . . . . . . . . . "
+    "e  . . . . . . . . . "
+    "e  . . . . . . . . . "
+    "e  . . . . . . . . . "
+    "e  . . . . . . . . . "
+    "e  . . . . . . . .  ."
+    "e  . . . . . . . .  ."
+    "e  . . . . . . . .  ."
+    "e  . . . . . . . . g";
+  column-gap: 8px;
+  row-gap: 1px;
 }
 
 .E {
