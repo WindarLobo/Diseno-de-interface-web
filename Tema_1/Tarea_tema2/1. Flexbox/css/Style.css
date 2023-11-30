@@ -1,9 +1,10 @@
 .contenedor {
   margin: 80px auto;
   display: flex;
-  flex-flow: row wrap;
+
   justify-content: space-around;
   text-align: center;
+  flex-flow: wrap;
 }
 
 .contenedor > * {
@@ -40,4 +41,10 @@
 .E {
   min-height: 30px;
   background-color: rgb(178, 230, 177);
+}
+
+@media screen and (max-width: 500px) {
+  .B {
+    display: none;
+  }
 }
