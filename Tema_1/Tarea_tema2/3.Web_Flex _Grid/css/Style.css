@@ -1,105 +1,230 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
+p {
+  font-size: 23px;
+}
 body {
   height: 100vh;
   background: linear-gradient(100deg, rgb(191, 79, 181), royalblue);
   color: aliceblue;
 }
 
-header {
-  background: linear-gradient(100deg, rgb(153, 39, 144), royalblue);
-  color: #fff;
-  padding: 8px;
-  display: grid;
-  row-gap: 10px;
-  column-gap: 10px;
-  font-size: 15px;
-}
-
-.menu {
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Centra los elementos horizontalmente */
-}
-
-.logo {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.5em;
-  margin-right: 20px;
-}
-
-#menu-toggle {
-  display: none; /* Oculta el checkbox de forma predeterminada */
-}
-
-.menu-icon {
-  font-size: 1.5em;
-  cursor: pointer;
-  display: none;
-  margin: 10px; /* Oculta el icono en tamaños de pantalla mayores */
-}
-
-.navbar {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centra los elementos del menú verticalmente */
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  text-align: center; /* Centra los elementos del menú horizontalmente */
-}
-
-li {
-  margin-bottom: 15px;
-}
-
-a {
-  color: #fff;
-  text-decoration: none;
-}
-.social-icons {
-  display: grid;
-  grid-auto-flow: column;
-  gap: 85px; /* Ajusta el espacio entre los iconos según tu preferencia */
-}
-.separate-div {
-  text-align: center;
-  background: linear-gradient(100deg, rgb(153, 39, 144), rgb(53, 97, 227));
-  padding: 20px;
-  margin-top: 20px;
-  /* Ajusta según sea necesario */
-}
-/* Media Query para tamaños de pantalla más pequeños */
 @media screen and (max-width: 500px) {
+  header {
+    background: linear-gradient(100deg, rgb(153, 39, 144), royalblue);
+    color: #fff;
+    padding: 8px;
+    display: grid;
+    row-gap: 10px;
+    column-gap: 10px;
+    font-size: 13px;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra los elementos horizontalmente */
+  }
+
+  .logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3em;
+  }
+
+  #menu-toggle {
+    display: none; /* Oculta el checkbox de forma predeterminada */
+  }
+
   .navbar {
-    display: none; /* Oculta la barra de navegación en tamaños de pantalla más pequeños */
+    display: none;
     position: absolute;
-    top: 60px;
+    top: 30px;
     left: 0;
-    width: 100%;
+    width: 100%; /* Ajusta según sea necesario */
     border: 1px solid #000;
     background: linear-gradient(100deg, rgb(153, 39, 144), rgb(53, 97, 227));
+    overflow-y: auto; /* Agrega un desplazamiento vertical si es necesario */
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center; /* Centra los elementos del menú horizontalmente */
+  }
+
+  li {
+    margin-bottom: 15px;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    display: block; /* Hace que el enlace ocupe todo el ancho del contenedor */
+    padding: 3px; /* Ajusta según sea necesario */
+    transition: background-color 0.3s ease;
+  }
+
+  a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  span {
+    margin-left: 5px;
+  }
+  .social-icons {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 15px;
+    justify-content: space-around;
+  }
+
+  .separate-div-1,
+  .separate-div-3,
+  .separate-div-4,
+  .separate-div-5 {
+    text-align: center;
+    background: linear-gradient(100deg, rgb(153, 39, 144), rgb(53, 97, 227));
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px; /* Ajusta según sea necesario */
+  }
+  .separate-div-4 img {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    /* Ajusta la altura automáticamente para mantener la proporción */
+  }
+  .separate-div-2 {
+    text-align: center;
+    background: linear-gradient(100deg, rgb(153, 39, 144), rgb(53, 97, 227));
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px; /* Ajusta según sea necesario */
   }
 
   #menu-toggle:checked ~ .navbar {
-    display: flex;
+    display: grid;
   }
 
   .menu-icon {
-    display: block; /* Muestra el icono en tamaños de pantalla más pequeños */
+    display: inline-block; /* Muestra el icono en tamaños de pantalla más pequeños */
   }
 
   label {
     cursor: pointer;
+  }
+  input {
+    font-size: 10px;
+    padding: 5px;
+    display: inline-block;
+  }
+
+  .button {
+    margin-top: 5px;
+    padding: 3px;
+    font-size: 10px;
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  .navbar {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    border: 1px solid #000;
+    background: linear-gradient(100deg, rgb(153, 39, 144), rgb(53, 97, 227));
+    overflow-y: auto;
+    order: 2;
+  }
+  #menu-toggle,
+  .menu-icon,
+  .logo {
+    display: none; /* Oculta el checkbox de forma predeterminada */
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center; /* Centra los elementos del menú horizontalmente */
+  }
+
+  li {
+    margin-bottom: 15px;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    display: block; /* Hace que el enlace ocupe todo el ancho del contenedor */
+    padding: 3px; /* Ajusta según sea necesario */
+    transition: background-color 0.3s ease;
+  }
+
+  a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  span {
+    margin-left: 5px;
+  }
+  .social-icons {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 15px;
+    justify-content: space-around;
+  }
+
+  .separate-div-1 {
+    text-align: center;
+    background: linear-gradient(100deg, rgb(153, 39, 144), rgb(53, 97, 227));
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .separate-div-4 {
+    text-align: center;
+    background: linear-gradient(100deg, rgb(153, 39, 144), rgb(53, 97, 227));
+    padding: 20px;
+    margin-top: 140px; /* Ajustado para alinear con el div-1 */
+  }
+
+  .separate-div-4 img {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    /* Ajusta la altura automáticamente para mantener la proporción */
+  }
+  .separate-div-2 {
+    position: relative;
+    top: 640px; /* Ajusta según sea necesario */
+    text-align: center;
+    background: linear-gradient(100deg, rgb(154, 39, 144), rgb(53, 97, 227));
+    padding: 20px;
+    /* Ajustado para alinear con el div-4 */
+  }
+  .separate-div-3 {
+    position: relative;
+    top: 660px; /* Ajusta según sea necesario */
+    text-align: center;
+    background: linear-gradient(100deg, rgb(154, 39, 144), rgb(53, 97, 227));
+    padding: 20px;
+    /* Ajustado para alinear con el div-4 */
+  }
+  .separate-div-3 input,
+  .separate-div-3 button {
+    font-size: 10px;
+    padding: 5px;
+    margin: px; /* Ajusta el margen según sea necesario */
+    box-sizing: border-box; /* Incluye el padding en el ancho y alto */
+    display: inline-block;
+  }
+  .separate-div-5 {
+    position: relative;
+    text-align: center;
+    top: 160px;
+    background: linear-gradient(100deg, rgb(153, 39, 144), rgb(53, 97, 227));
+    padding: 20px;
+    margin-bottom: 70px;
+    margin-top: 10px; /* Ajusta según sea necesario */
   }
 }
