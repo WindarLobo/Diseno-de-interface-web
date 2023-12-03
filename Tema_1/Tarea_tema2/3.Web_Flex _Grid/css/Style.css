@@ -7,137 +7,71 @@ p {
   font-size: 23px;
 }
 body {
-  height: 100vh;
   background: linear-gradient(100deg, rgb(191, 79, 181), royalblue);
   color: aliceblue;
 }
-
-@media screen and (max-width: 500px) {
-  header {
-    background: linear-gradient(100deg, rgb(153, 39, 144), royalblue);
-    color: #fff;
-    padding: 8px;
-    display: grid;
-    row-gap: 10px;
-    column-gap: 10px;
-    font-size: 13px;
-  }
-
-  .menu {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Centra los elementos horizontalmente */
-  }
-
-  .logo {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.3em;
-  }
-
-  #menu-toggle {
-    display: none; /* Oculta el checkbox de forma predeterminada */
-  }
-
-  .navbar {
-    display: none;
-    position: absolute;
-    top: 30px;
-    left: 0;
-    width: 100%; /* Ajusta según sea necesario */
-    border: 1px solid #000;
-    background: linear-gradient(100deg, rgb(153, 39, 144), rgb(53, 97, 227));
-    overflow-y: auto; /* Agrega un desplazamiento vertical si es necesario */
-  }
-  ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    text-align: center; /* Centra los elementos del menú horizontalmente */
-  }
-
-  li {
-    margin-bottom: 15px;
-  }
-
-  a {
-    color: #fff;
-    text-decoration: none;
-    display: block; /* Hace que el enlace ocupe todo el ancho del contenedor */
-    padding: 3px; /* Ajusta según sea necesario */
-    transition: background-color 0.3s ease;
-  }
-
-  a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-  span {
-    margin-left: 5px;
-  }
-  .social-icons {
-    display: grid;
-    grid-auto-flow: column;
-    column-gap: 15px;
-    justify-content: space-around;
-  }
-
-  .separate-div-1,
-  .separate-div-3,
-  .separate-div-4,
-  .separate-div-5 {
-    text-align: center;
-    background: linear-gradient(100deg, rgb(153, 39, 144), rgb(53, 97, 227));
-    padding: 20px;
-    margin-bottom: 20px;
-    margin-top: 10px; /* Ajusta según sea necesario */
-  }
-  .separate-div-4 img {
-    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
-    /* Ajusta la altura automáticamente para mantener la proporción */
-  }
-  .separate-div-2 {
-    text-align: center;
-    background: linear-gradient(100deg, rgb(153, 39, 144), rgb(53, 97, 227));
-    padding: 10px;
-    margin-bottom: 20px;
-    margin-top: 10px; /* Ajusta según sea necesario */
-  }
-
-  #menu-toggle:checked ~ .navbar {
-    display: grid;
-  }
-
-  .menu-icon {
-    display: inline-block; /* Muestra el icono en tamaños de pantalla más pequeños */
-  }
-
-  label {
-    cursor: pointer;
-  }
-  input {
-    font-size: 10px;
-    padding: 5px;
-    display: inline-block;
-  }
-
-  .button {
-    margin-top: 5px;
-    padding: 3px;
-    font-size: 10px;
-    display: inline-block;
-  }
+.navbar {
+  padding: 15px;
+  position: flex;
+  margin: 25px;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #000;
+  background: linear-gradient(100deg, rgb(153, 39, 144), rgb(53, 97, 227));
+  margin-top: 65px;
 }
-@media screen and (min-width: 501px) and (max-width: 800px) {
-  .navbar {
-    position: absolute;
-    top: 90px;
-    left: 0;
-    width: 100%;
-    border: 1px solid #000;
-    background: linear-gradient(100deg, rgb(153, 39, 144), rgb(53, 97, 227));
-    overflow-y: auto;
-    order: 2;
-  }
+.separate-div-1,
+.separate-div-2,
+.separate-div-3,
+.separate-div-4,
+.separate-div-5 {
+  padding: 15px;
+  position: flex;
+  margin: 25px;
+  align-items: center;
+  text-align: center;
+  margin-top: 15px;
+  background: linear-gradient(100deg, rgb(153, 39, 144), rgb(53, 97, 227));
+}
+.separate-div-3 input,
+.separate-div-3 button {
+  font-size: 10px;
+  padding: 5px;
+  box-sizing: border-box; /* Incluye el padding en el ancho y alto */
+  display: inline-block;
+}
+
+.separate-div-4 img {
+  height: auto;
+  display: block;
+  width: 100%;
+}
+ul {
+  margin-right: 35px;
+}
+
+ul,
+.social-icons {
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 75;
+  column-gap: 75px;
+}
+a:hover,
+i:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+li {
+  margin-bottom: 15px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
   #menu-toggle,
   .menu-icon,
   .logo {
@@ -145,86 +79,52 @@ body {
   }
 
   ul {
+    margin-top: 10px;
     list-style: none;
-    display: flex;
-    flex-direction: column;
-    text-align: center; /* Centra los elementos del menú horizontalmente */
+    display: grid; /* Cambia a un diseño de cuadrícula */
+    grid-template-columns: repeat(2, 1fr); /* 3 columnas */
+    grid-gap: 15px; /* Espacio entre elementos */
+    text-align: center;
   }
 
   li {
     margin-bottom: 15px;
   }
 
-  a {
+  a,
+  i {
     color: #fff;
     text-decoration: none;
-    display: block; /* Hace que el enlace ocupe todo el ancho del contenedor */
-    padding: 3px; /* Ajusta según sea necesario */
+    display: block;
+    padding: 3px;
     transition: background-color 0.3s ease;
   }
 
-  a:hover {
+  a:hover,
+  i:hover {
     background-color: rgba(255, 255, 255, 0.2);
   }
+
   span {
     margin-left: 5px;
   }
+
   .social-icons {
     display: grid;
     grid-auto-flow: column;
     column-gap: 15px;
     justify-content: space-around;
   }
-
-  .separate-div-1 {
-    text-align: center;
-    background: linear-gradient(100deg, rgb(153, 39, 144), rgb(53, 97, 227));
-    padding: 20px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-  }
-  .separate-div-4 {
-    text-align: center;
-    background: linear-gradient(100deg, rgb(153, 39, 144), rgb(53, 97, 227));
-    padding: 20px;
-    margin-top: 140px; /* Ajustado para alinear con el div-1 */
-  }
-
-  .separate-div-4 img {
-    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
-    /* Ajusta la altura automáticamente para mantener la proporción */
-  }
-  .separate-div-2 {
+}
+@media screen and (max-width: 499px) {
+  .navbar {
     position: relative;
-    top: 640px; /* Ajusta según sea necesario */
-    text-align: center;
-    background: linear-gradient(100deg, rgb(154, 39, 144), rgb(53, 97, 227));
-    padding: 20px;
-    /* Ajustado para alinear con el div-4 */
   }
-  .separate-div-3 {
-    position: relative;
-    top: 660px; /* Ajusta según sea necesario */
-    text-align: center;
-    background: linear-gradient(100deg, rgb(154, 39, 144), rgb(53, 97, 227));
-    padding: 20px;
-    /* Ajustado para alinear con el div-4 */
-  }
-  .separate-div-3 input,
-  .separate-div-3 button {
-    font-size: 10px;
-    padding: 5px;
-    margin: px; /* Ajusta el margen según sea necesario */
-    box-sizing: border-box; /* Incluye el padding en el ancho y alto */
-    display: inline-block;
-  }
-  .separate-div-5 {
-    position: relative;
-    text-align: center;
-    top: 160px;
-    background: linear-gradient(100deg, rgb(153, 39, 144), rgb(53, 97, 227));
-    padding: 20px;
-    margin-bottom: 70px;
-    margin-top: 10px; /* Ajusta según sea necesario */
+}
+@media screen and (min-width: 801px) {
+  #menu-toggle,
+  .menu-icon,
+  .logo {
+    display: none; /* Oculta el checkbox de forma predeterminada */
   }
 }

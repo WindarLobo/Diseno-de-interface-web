@@ -1,0 +1,44 @@
+.separate-div-4 {
+  text-align: center;
+  background: linear-gradient(100deg, rgb(153, 39, 144), rgb(53, 97, 227));
+  padding: 20px;
+  margin-top: 140px; /* Ajustado para alinear con el div-1 */
+}
+
+.separate-div-4 img {
+  width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+  /* Ajusta la altura automáticamente para mantener la proporción */
+}
+.separate-div-2 {
+  position: relative;
+  top: 650px; /* Ajusta según sea necesario */
+  text-align: center;
+  background: linear-gradient(100deg, rgb(154, 39, 144), rgb(53, 97, 227));
+  padding: 20px;
+  /* Ajustado para alinear con el div-4 */
+}
+.separate-div-3 {
+  position: relative;
+  top: 660px; /* Ajusta según sea necesario */
+  text-align: center;
+  background: linear-gradient(100deg, rgb(154, 39, 144), rgb(53, 97, 227));
+  padding: 20px;
+  /* Ajustado para alinear con el div-4 */
+}
+.separate-div-3 input,
+.separate-div-3 button {
+  font-size: 10px;
+  padding: 5px;
+  margin: px; /* Ajusta el margen según sea necesario */
+  box-sizing: border-box; /* Incluye el padding en el ancho y alto */
+  display: inline-block;
+}
+.separate-div-5 {
+  position: relative;
+  text-align: center;
+  top: 160px;
+  background: linear-gradient(100deg, rgb(153, 39, 144), rgb(53, 97, 227));
+  padding: 20px;
+  margin-bottom: 70px;
+  margin-top: 10px; /* Ajusta según sea necesario */
+}
