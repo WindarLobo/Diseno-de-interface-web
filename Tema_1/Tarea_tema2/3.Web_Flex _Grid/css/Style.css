@@ -3,10 +3,9 @@
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-p {
-  font-size: 23px;
-}
+
 body {
+  font-size: 17px;
   background: linear-gradient(100deg, rgb(191, 79, 181), royalblue);
   color: aliceblue;
 }
@@ -23,14 +22,13 @@ a {
 .separate-div-5 {
   text-align: center;
   background: linear-gradient(100deg, rgb(153, 39, 144), rgb(53, 97, 227));
-  padding: 20px;
-  margin-bottom: 40px;
-  margin-top: 20px;
+  padding: 23px;
+  margin-bottom: 20px;
+  margin-top: 23px;
 }
 
 .separate-div-4 img {
-  width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
-  /* Ajusta la altura automáticamente para mantener la proporción */
+  width: 100%;
 }
 input {
   font-size: 10px;
@@ -39,26 +37,54 @@ input {
 }
 
 @media screen and (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
   #menu-toggle {
-    display: none; /* Oculta el checkbox de forma predeterminada */
+    display: none;
   }
 
   .navbar {
+    order: 1;
     display: none;
     position: absolute;
     top: 50px;
     left: 0;
-    width: 100%; /* Ajusta según sea necesario */
+    width: 100%;
     border: 1px solid #000;
     background: linear-gradient(100deg, rgb(153, 39, 144), rgb(53, 97, 227));
-    overflow-y: auto; /* Agrega un desplazamiento vertical si es necesario */
+    overflow-y: auto;
   }
 
+  .separate-div-1 {
+    order: 2;
+  }
+  .separate-div-2 {
+    order: 3;
+  }
+  .separate-div-3 {
+    order: 4;
+  }
+  .separate-div-4 {
+    order: 5;
+  }
+  .separate-div-5 {
+    order: 6;
+  }
+  a,
+  i {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 3px;
+    transition: background-color 0.3s ease;
+  }
   ul {
     list-style: none;
     display: flex;
     flex-direction: column;
-    text-align: center; /* Centra los elementos del menú horizontalmente */
+    text-align: center;
   }
 
   li {
@@ -69,18 +95,7 @@ input {
   i:hover {
     background-color: rgba(255, 255, 255, 0.2);
   }
-  a,
-  i {
-    color: #fff;
-    text-decoration: none;
-    display: block; /* Hace que el enlace ocupe todo el ancho del contenedor */
-    padding: 3px; /* Ajusta según sea necesario */
-    transition: background-color 0.3s ease;
-  }
 
-  a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
   .social-icons {
     display: grid;
     grid-auto-flow: column;
@@ -97,14 +112,7 @@ input {
     text-align: center;
     padding: 20px;
     background: linear-gradient(100deg, rgb(153, 39, 144), rgb(53, 97, 227));
-    display: grid; /* Muestra el icono en tamaños de pantalla más pequeños */
-  }
-
-  .button {
-    margin-top: 5px;
-    padding: 3px;
-    font-size: 10px;
-    display: inline-block;
+    display: grid;
   }
 }
 
@@ -112,7 +120,7 @@ input {
   #menu-toggle,
   .menu-icon,
   .logo {
-    display: none; /* Oculta el checkbox de forma predeterminada */
+    display: none;
   }
 
   .navbar {
@@ -128,9 +136,9 @@ input {
   ul {
     margin-top: 10px;
     list-style: none;
-    display: grid; /* Cambia a un diseño de cuadrícula */
-    grid-template-columns: repeat(2, 1fr); /* 3 columnas */
-    grid-gap: 15px; /* Espacio entre elementos */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
     text-align: center;
   }
 
@@ -167,7 +175,7 @@ input {
   #menu-toggle,
   .menu-icon,
   .logo {
-    display: none; /* Oculta el checkbox de forma predeterminada */
+    display: none;
   }
   .separate-div-1,
   .separate-div-2,
