@@ -8,11 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   menuToggle.addEventListener("change", function () {
     if (menuToggle.checked) {
-      separateDiv1.style.transform = "translateY(230px)";
-      separateDiv2.style.transform = "translateY(230px)";
-      separateDiv3.style.transform = "translateY(230px)";
-      separateDiv4.style.transform = "translateY(230px)";
-      separateDiv5.style.transform = "translateY(230px)";
+      separateDiv1.style.transform = "translateY(280px)";
+      separateDiv2.style.transform = "translateY(280px)";
+      separateDiv3.style.transform = "translateY(280px)";
+      separateDiv4.style.transform = "translateY(280px)";
+      separateDiv5.style.transform = "translateY(280px)";
     } else {
       separateDiv1.style.transform = "translateY(0)";
       separateDiv2.style.transform = "translateY(0)";
