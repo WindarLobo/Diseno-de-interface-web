@@ -16,20 +16,21 @@ body {
 }
 
 .estructura {
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
   background-color: #232323;
-  border-radius: 50%;
+  border-radius: 20%;
   position: relative;
   border: 6px solid rgb(14, 13, 13);
   box-shadow: inset 0 0 20px rgb(255, 255, 255);
   z-index: 2;
 }
 .correa {
-  width: 180px;
+  width: 170px;
   border-radius: 10%;
-  height: 150px;
-  background-color: #333;
+  height: 180px;
+  background-color: #051d49;
+  border: 5px solid rgb(17, 156, 47);
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -44,7 +45,7 @@ body {
 
 .correa-inferior {
   z-index: 0;
-  top: 320px;
+  top: 300px;
   transform-origin: 50% 0%;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
 }
@@ -58,9 +59,7 @@ body {
   color: #dfdfdf;
 }
 .marca {
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  font-size: 26px;
   position: absolute;
   transform-origin: 50% 100%;
   color: #dfdfdf;
@@ -69,6 +68,7 @@ body {
   top: 165px;
   bottom: 15px;
   left: 50%;
+
   transform: translateX(-50%);
 }
 .numero-12 {
