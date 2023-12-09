@@ -1,10 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 body {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  margin: 0;
-  background-color: rgb(224, 230, 246);
+  margin: 0 auto;
+  background-color: rgb(240, 240, 240);
 }
 
 .container {
@@ -14,15 +18,16 @@ body {
 .estructura {
   width: 300px;
   height: 300px;
-  background-color: #100f0f;
-  border-radius: 28%;
+  background-color: #232323;
+  border-radius: 50%;
   position: relative;
-  border: 4px solid rgb(14, 13, 13);
+  border: 6px solid rgb(14, 13, 13);
   box-shadow: inset 0 0 20px rgb(255, 255, 255);
   z-index: 2;
 }
 .correa {
-  width: 190px;
+  width: 180px;
+  border-radius: 10%;
   height: 150px;
   background-color: #333;
   position: absolute;
@@ -49,9 +54,23 @@ body {
   font-weight: bold;
   position: absolute;
   transform-origin: 50% 100%;
+  font-family: Arial, Helvetica, sans-serif;
   color: #dfdfdf;
 }
-
+.marca {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  position: absolute;
+  transform-origin: 50% 100%;
+  color: #dfdfdf;
+}
+.marca-reloj {
+  top: 165px;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .numero-12 {
   top: 15px;
   left: 50%;
@@ -74,8 +93,8 @@ body {
 }
 
 .centro {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 4%;
   background-color: #f5f5f5;
   border-radius: 50%;
   position: absolute;
@@ -96,43 +115,68 @@ body {
 
 .segundos {
   width: 2px;
-  height: 140px;
   background-color: #ff0000;
   transform: translate(-50%, -100%) rotate(90deg);
-  transform-origin: bottom;
-  animation: girarSegundos 60s linear infinite;
+  top: 10%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  height: 40%;
+  border-radius: 10px;
+  animation: segundos 60s linear 0s infinite;
+}
+
+@keyframes segundos {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .minutos {
-  width: 2px;
-  height: 120px;
-  background-color: rgb(127, 83, 146);
-  transform: translate(-50%, -100%) rotate(90deg);
+  width: 3px;
+  height: 40.1%;
+  top: 12%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  background-color: rgb(138, 138, 138);
   animation: girarMinutos 3600s linear infinite;
+  animation: minutos 3600s steps(60, end) forwards 0s infinite;
+}
+
+@keyframes minutos {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .horas {
-  width: 2px;
-  height: 100px;
+  width: 3px;
+  height: 25%;
   background-color: #fdfbfb;
-  transform: translate(-50%, -100%) rotate(90deg);
-  animation: girarHoras 43200s linear infinite;
+  top: 26%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  margin: 0 auto;
+  transform: rotate(30deg);
+  animation: horas 86400s steps(12, end) forwards 0s infinite;
 }
 
-@keyframes girarSegundos {
-  to {
-    transform: translate(-50%, -100%) rotate(450deg);
+@keyframes horas {
+  0% {
+    transform: rotate(30deg);
   }
-}
-
-@keyframes girarMinutos {
-  to {
-    transform: translate(-50%, -100%) rotate(3600deg);
-  }
-}
-
-@keyframes girarHoras {
-  to {
-    transform: translate(-50%, -100%) rotate(43200deg);
+  100% {
+    transform: rotate(390deg);
   }
 }
