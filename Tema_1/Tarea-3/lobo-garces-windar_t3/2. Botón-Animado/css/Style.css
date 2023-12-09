@@ -52,7 +52,7 @@ body {
 }
 
 #animated-checkbox:checked + .animated-button:before {
-  animation: textAppear 0.5s ease-in-out 0.4s; /* Animación para mostrar el texto en el 50% */
+  animation: textAppear 0.5s ease-in-out 0.5s;
   animation-fill-mode: forwards;
 }
 
