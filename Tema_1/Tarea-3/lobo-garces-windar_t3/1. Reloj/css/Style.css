@@ -1,8 +1,6 @@
 * {
   padding: 0;
-
   margin: 0;
-
   box-sizing: border-box;
 }
 body {
@@ -96,8 +94,8 @@ body {
 }
 
 .centro {
-  width: 10px;
-  height: 4%;
+  width: 13px;
+  height: 5%;
   background-color: #f5f5f5;
   border-radius: 50%;
   position: absolute;
@@ -119,7 +117,6 @@ body {
 .segundos {
   width: 2px;
   background-color: #ff0000;
-  transform: rotateZ(0deg);
   top: 10%;
   left: 0;
   right: 0;
@@ -127,10 +124,7 @@ body {
   margin: 0 auto;
   height: 40%;
   border-radius: 10px;
-  -webkit-animation: segundos 60s infinite linear;
-
-  -o-animation: segundos 60s infinite linear;
-
+  transform: rotateZ(0deg);
   animation: segundos 60s infinite linear;
 }
 
@@ -142,20 +136,16 @@ body {
 
 .minutos {
   width: 3px;
-  height: 40.1%;
-  top: 12%;
+  height: 40%;
+  top: 10%;
   left: 0;
   right: 0;
   bottom: 0;
   margin: 0 auto;
   background-color: rgb(138, 138, 138);
   transform: rotateZ(0deg);
-
-  -webkit-animation: minutos 3600s infinite linear;
-
-  -o-animation: minutos 3600s infinite linear;
-
   animation: minutos 3600s infinite linear;
+  border-radius: 10px;
 }
 
 @keyframes minutos {
@@ -175,15 +165,11 @@ body {
   border-radius: 10px;
   margin: 0 auto;
   transform: rotateZ(310deg);
-  -webkit-animation: horass 43200s infinite linear;
-
-  -o-animation: horas 43200s infinite linear;
-
   animation: horas 43200s infinite linear;
 }
 
 @keyframes horas {
   to {
-    transform: rotateZ(670deg);
+    transform: rotateZ(360deg);
   }
 }
