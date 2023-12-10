@@ -1,6 +1,9 @@
 * {
   padding: 0;
+
   margin: 0;
+
+  box-sizing: border-box;
 }
 body {
   display: flex;
@@ -8,7 +11,7 @@ body {
   justify-content: center;
   height: 100vh;
   margin: 0 auto;
-  background-color: rgb(240, 240, 240);
+  color: #fff;
 }
 
 .container {
@@ -116,7 +119,7 @@ body {
 .segundos {
   width: 2px;
   background-color: #ff0000;
-  transform: translate(-50%, -100%) rotate(90deg);
+  transform: rotateZ(0deg);
   top: 10%;
   left: 0;
   right: 0;
@@ -124,15 +127,16 @@ body {
   margin: 0 auto;
   height: 40%;
   border-radius: 10px;
-  animation: segundos 60s linear 0s infinite;
+  -webkit-animation: segundos 60s infinite linear;
+
+  -o-animation: segundos 60s infinite linear;
+
+  animation: segundos 60s infinite linear;
 }
 
 @keyframes segundos {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
+  to {
+    transform: rotateZ(360deg);
   }
 }
 
@@ -145,16 +149,18 @@ body {
   bottom: 0;
   margin: 0 auto;
   background-color: rgb(138, 138, 138);
-  animation: girarMinutos 3600s linear infinite;
-  animation: minutos 3600s steps(60, end) forwards 0s infinite;
+  transform: rotateZ(0deg);
+
+  -webkit-animation: minutos 3600s infinite linear;
+
+  -o-animation: minutos 3600s infinite linear;
+
+  animation: minutos 3600s infinite linear;
 }
 
 @keyframes minutos {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
+  to {
+    transform: rotateZ(360deg);
   }
 }
 
@@ -168,15 +174,16 @@ body {
   bottom: 0;
   border-radius: 10px;
   margin: 0 auto;
-  transform: rotate(30deg);
-  animation: horas 86400s steps(12, end) forwards 0s infinite;
+  transform: rotateZ(310deg);
+  -webkit-animation: horass 43200s infinite linear;
+
+  -o-animation: horas 43200s infinite linear;
+
+  animation: horas 43200s infinite linear;
 }
 
 @keyframes horas {
-  0% {
-    transform: rotate(30deg);
-  }
-  100% {
-    transform: rotate(390deg);
+  to {
+    transform: rotateZ(670deg);
   }
 }

@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+p {
+  color: #747474;
+}
+.container-fluid {
+  background-color: rgb(171, 168, 168);
+  min-height: 100vh;
+}
+.carousel-indicators {
+  position: absolute;
+  top: 100%; /* Ajusta según sea necesario para cambiar la posición vertical */
+  left: 50%;
+  /* Asegura que esté sobre el carrusel */
+}
+
+.carousel-indicators button.active {
+  background-color: #e7508f;
+}
+.custom-btn {
+  background-color: #e7508f; /* Cambia el color de fondo según tu preferencia */
+  color: #ffffff; /* Cambia el color del texto según tu preferencia */
+  padding: 8px 15px; /* Ajusta el relleno según tus preferencias */
+  display: inline-block; /* Asegura que el botón no ocupe todo el ancho */
+  text-decoration: none; /* Elimina el subrayado predeterminado */
+  border-radius: 5px; /* Añade bordes redondeados */
+}
+
+.custom-btn:hover {
+  background-color: #2b5edf; /* Cambia el color de fondo al pasar el ratón */
+  /* Puedes ajustar este color según tus preferencias */
+}
+.admin-text {
+  font-size: 12px;
+  color: #747474; /* Cambia el color según tu preferencia */
+  margin-left: 10%; /* Ajusta según sea necesario */
+}
