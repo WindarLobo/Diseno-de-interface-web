@@ -223,5 +223,32 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var mySwiper = new Swiper(".swiper-container", {
+          // Configuración adicional de Swiper aquí...
+          slidesPerView: 1, // Número de slides visibles
+          spaceBetween: 10, // Espacio entre slides
+          loop: true, // Bucle infinito
+          navigation: {
+            nextEl: ".carousel-control-next",
+            prevEl: ".carousel-control-prev",
+          },
+          on: {
+            slideChange: function () {
+              // Actualiza las clases activas cuando cambia la diapositiva
+              document
+                .querySelector(".carousel-item.active")
+                .classList.remove("active");
+              var currentSlide = this.slides[this.activeIndex];
+              currentSlide.classList.add("active");
+            },
+          },
+        });
+
+        // Configuración inicial para la primera diapositiva
+        document.querySelector(".carousel-item").classList.add("active");
+      });
+    </script>
   </body>
 </html>

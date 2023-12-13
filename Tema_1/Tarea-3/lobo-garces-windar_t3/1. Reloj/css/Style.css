@@ -124,13 +124,13 @@ body {
   margin: 0 auto;
   height: 40%;
   border-radius: 10px;
-  transform: rotateZ(0deg);
+  transform: translateX(-50%) rotateZ(0deg);
   animation: segundos 60s infinite linear;
 }
 
 @keyframes segundos {
   to {
-    transform: rotateZ(360deg);
+    transform: translateX(-50%) rotateZ(360deg);
   }
 }
 
@@ -143,14 +143,14 @@ body {
   bottom: 0;
   margin: 0 auto;
   background-color: rgb(138, 138, 138);
-  transform: rotateZ(0deg);
+  transform: translateX(-50%) rotateZ(0deg);
   animation: minutos 3600s infinite linear;
   border-radius: 10px;
 }
 
 @keyframes minutos {
   to {
-    transform: rotateZ(360deg);
+    transform: translateX(-50%) rotateZ(360deg);
   }
 }
 
@@ -164,12 +164,12 @@ body {
   bottom: 0;
   border-radius: 10px;
   margin: 0 auto;
-  transform: rotateZ(310deg);
+  transform: translateX(-50%) rotateZ(310deg);
   animation: horas 43200s infinite linear;
 }
 
 @keyframes horas {
   to {
-    transform: rotateZ(360deg);
+    transform: translateX(-50%) rotateZ(360deg);
   }
 }
