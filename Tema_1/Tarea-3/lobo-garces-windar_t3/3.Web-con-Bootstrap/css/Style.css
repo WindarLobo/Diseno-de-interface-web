@@ -11,7 +11,7 @@ p {
   color: #747474;
 }
 .container-fluid {
-  background-color: rgb(242, 240, 240);
+  background-color: rgb(221, 220, 220);
   min-height: 100vh;
 }
 .carousel-indicators {
@@ -40,15 +40,14 @@ p {
 .admin-text {
   font-size: 12px;
   color: #b3aeae;
-  margin-left: 10%;
+  margin-left: 22%;
 }
 .fecha {
   background-color: #454545;
   color: #fff;
   width: 14%;
-  font-size: 14px;
-
-  padding: 2px 2px;
+  font-size: 0.9em;
+  padding: 2px 3px;
 }
 .numero {
   font-weight: bold;
