@@ -67,7 +67,14 @@ h5 {
   background-position: center;
   flex-shrink: 0;
 }
-
+.avatar {
+  width: 120px;
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  margin: 0 auto;
+}
 @keyframes slider {
   0% {
     transform: translateX(0);
