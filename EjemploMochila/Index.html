@@ -8,22 +8,29 @@
       href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/style.css" />
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+    <link rel="stylesheet" href="css/style-Index.css" />
+   
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar">
       
           <a class="navbar-brand" href="#">WayuuGalicia</a>
+          
           <ul class="nav">
             <li class="nav-item active">
-              <a class="nav-link " href="/">Inicio</a>
+              <a class="nav-link" href="#">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#mapa">Ubicacion</a>
@@ -34,7 +41,19 @@
             <li class="nav-item">
               <a class="nav-link" href="Acerca.html">Acerca de</a>
             </li>
+           
+             <li class="nav-item">
+              <a class="nav-link" href="#registro">
+                Registrate <i class="fa-solid fa-user"></i> 
+               </a>
+             </li>
+             <li class="nav-item">
+              <a class="nav-link" href="#stripe">
+                  <i class="fa fa-cart-shopping"></i>
+               </a>
+             </li>
           </ul>
+
         
       </nav>
       <div
@@ -126,15 +145,7 @@
             <a href="#mapa">Ir al mapa</a>
           </div>
         </div>
-        <form action="">
-          <label for="email">Correo electronico:</label>
-          <div class="d-flex">
-            <div class="flex-fill mr-2">
-              <input type="email" id="email" class="form-control" />
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-          </div>
-        </form>
+        
       </div>
     </section>
     <section>
@@ -145,7 +156,7 @@
           <div class="stripe-container">
             <div class="card">
               <div
-                title="Foto bolso Wayuu"
+                title="Bolso"
                 class="cover cover-small"
                 style="
                   background-image: url(Img/Producto-1JPG.jpg);
@@ -154,7 +165,7 @@
               <div class="card-body">
 
                 <h5 class="card-title">Bolso Wayuu con diseño </h5>
-                <p class="badge badge-info">60,00 EUR</p>
+                <p >60,00 EUR</p>
                 <p>Bolso wayuu 100% original hecho a mano por las mujer indigenas de la tribu wayuu </p>
                 <button class="btn btn-2  btn-light" type="button">Añadir</button>
 
@@ -164,7 +175,7 @@
            
             <div class="card">
               <div
-                title="Frappé"
+                title="Bolso"
                 class="cover cover-small"
                 style="
                   background-image: url(Img/Producto-2JPG.jpg);
@@ -172,27 +183,27 @@
               ></div>
               <div class="card-body">
                 <h5 class="card-title">Bolso Wayuu con diseño</h5>
-                <p class="badge badge-info">60,00 EUR</p>
+                <p>60,00 EUR</p>
                 <p>Bolso wayuu 100% original hecho a mano por las mujer indigenas de la tribu wayuu </p>
                 <button class="btn btn-2  btn-light" type="button">Añadir</button>
               </div>
             </div>
             <div class="card">
               <div
-                title="Taza de capuccino"
+                title="Bolso"
                 class="cover cover-small"
                 style="background-image: url(Img/Producto-3JPG.jpg)"
               ></div>
               <div class="card-body">
                 <h5 class="card-title">Bolso Wayuu unicolor</h5>
-                <p class="badge badge-info">50,00 EUR</p>
+                <p>50,00 EUR</p>
                 <p>Bolso wayuu 100% original hecho a mano por las mujer indigenas de la tribu wayuu </p>
                 <button class="btn btn-2  btn-light" type="button">Añadir</button>
               </div>
             </div>
             <div class="card">
               <div
-                title="Taza de café americano"
+                title="Bolso"
                 class="cover cover-small"
                 style="
                   background-image: url(Img/Producto-4JPG.jpg);
@@ -200,7 +211,7 @@
               ></div>
               <div class="card-body">
                 <h5 class="card-title">Bolso Wayuu con diseño</h5>
-                <p class="badge badge-info">60,00 EUR</p>
+                <p>60,00 EUR</p>
                 <p>Bolso wayuu 100% original hecho a mano por las mujer indigenas de la tribu wayuu </p>
                 <button class="btn btn-2  btn-light" type="button">Añadir</button>
             </div>
@@ -208,13 +219,13 @@
           </div>
           <div class="card">
             <div
-              title="Taza de capuccino"
+              title="Bolso"
               class="cover cover-small"
               style="background-image: url(Img/Producto-5JPG.jpg)"
             ></div>
             <div class="card-body">
               <h5 class="card-title">Bolso Wayuu unicolor</h5>
-              <p class="badge badge-info">50,00 EUR</p>
+              <p>50,00 EUR</p>
               <p>Bolso wayuu 100% original hecho a mano por las mujer indigenas de la tribu wayuu </p>
               <button class="btn btn-2  btn-light" type="button">Añadir</button>
             </div>
@@ -234,6 +245,61 @@
      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2965.293607714744!2d-8.705264923355525!3d41.99397395815046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2590d7934c843f%3A0x9341bb46cfc6695d!2sLugar%20Carregal%20de%20Arriba%2C%2036%2C%2036791%2C%20Pontevedra!5e0!3m2!1ses!2ses!4v1696613848525!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      </div>
     </div>
   </div>
+    </section>
+    <section class="section-registro" >
+      <div class="container"id="registro">
+        <div class="registro">
+          <div class="registro-text-box">
+            <h2 class="heading-secondary ">Regístrate y obtén beneficios exclusivos</h2>
+            <p class="registro-text">
+              Descubre productos exclusivos y ofertas especiales. Regístrate hoy
+          para recibir noticias y promociones. ¡Tu primera compra con descuento!
+            </p>
+
+            <form class="registro-form" name="sign-up" netlify>
+              <div>
+                <label for="full-name">Nombre completo</label>
+                <input
+                  id="full-name"
+                  type="text"
+                  placeholder="Tu Nombre"
+                  name="full-name"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="email">Correo electrónico</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="tucorreo@example.com"
+                  name="email"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="password">Contraseña</label>
+                <input
+                  id="password"
+                  type="password"
+                  placeholder="********"
+                  name="password"
+                  required
+                />
+              </div>
+
+              <button class="btn btn--form" type="submit">Registrarse</button>
+            </form>
+          </div>
+          <div
+            class="registro-img-box"
+            role="img"
+            aria-label="Persona disfrutando de productos"
+          ></div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
