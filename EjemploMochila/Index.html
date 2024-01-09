@@ -19,43 +19,52 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
     crossorigin="anonymous"
   />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Js/script.js"></script>
     <link rel="stylesheet" href="css/style-Index.css" />
    
   </head>
   <body>
     <header>
-      <nav class="navbar">
-      
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
           <a class="navbar-brand" href="#">WayuuGalicia</a>
-          
-          <ul class="nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#mapa">Ubicacion</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#stripe">Menú</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Acerca.html">Acerca de</a>
-            </li>
-           
-             <li class="nav-item">
-              <a class="nav-link" href="#registro">
-                Registrate <i class="fa-solid fa-user"></i> 
-               </a>
-             </li>
-             <li class="nav-item">
-              <a class="nav-link" href="#stripe">
-                  <i class="fa fa-cart-shopping"></i>
-               </a>
-             </li>
-          </ul>
-
-        
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#mapa">Ubicacion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#stripe">Menú</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Acerca.html">Acerca de</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Iniciar sesion 
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">  Iniciar sesion</a></li>
+                  
+                 </li>
+                  <li><a class="dropdown-item" href="#registro">Registrarse</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#stripe">
+                  Cesta(0)
+                 </a>
+               </li>
+            </ul>
+          </div>
+        </div>
       </nav>
+     
       <div
         class="cover d-flex justify-content-center align-items-center align-items-center flex-column"
       >
@@ -96,13 +105,11 @@
                   
                 "
               ></div>
-
               <div class="card-body">
                 <h5 class="card-title">Comercio justo</h5>
                 <p class="card-text">
                   Adquiere una mochila en WayuuGalicia significa que tu dinero
                   va directamente y de manera responsable a los pueblo Indigenas. 
-              
                 </p>
               </div>
             </div>
