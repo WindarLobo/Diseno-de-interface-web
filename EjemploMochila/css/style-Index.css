@@ -6,6 +6,7 @@ body {
   margin: 0em;
   font-family: "Noto Sans", sans-serif;
 }
+
 h1,
 h2,
 h3,
@@ -19,7 +20,7 @@ label {
 }
 .navbar-brand {
   font-family: Arial, "Lucida Sans Unicode", sans-serif;
-  font-size: 40px;
+  font-size: 35px;
 }
 .cover {
   height: 400px;
@@ -93,7 +94,7 @@ label {
   display: grid;
   grid-template-columns: 1fr;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-  border-radius: 12px; /* Reducción del radio del borde */
+  border-radius: 12px;
   background-image: linear-gradient(to right bottom, #a3c5a0, #77c0ee);
   overflow: hidden;
 }
@@ -186,4 +187,79 @@ label {
   top: 0;
   width: 100%;
   z-index: 1000;
+}
+
+.footer {
+  padding: 6.8rem 0;
+  border-top: 1px solid #eee;
+}
+
+.logo {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+}
+
+.fab {
+  font-size: 1.5rem;
+  color: #1e1e1e;
+  padding: auto;
+  width: 3rem;
+}
+
+.copyright {
+  color: #767676;
+  white-space: nowrap;
+}
+
+.footer-heading {
+  font-weight: 600;
+  margin-bottom: 2rem;
+  margin-left: 20px;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.2rem;
+}
+
+.contacto {
+  font-style: normal;
+  line-height: 1.6;
+}
+
+.direccion {
+  margin-bottom: 1rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  white-space: nowrap;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #1e1e1e;
 }
