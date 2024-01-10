@@ -1,0 +1,58 @@
+body {
+  background-color: rgb(203, 205, 208);
+}
+.container {
+  max-width: 960px;
+  border: 0 !important;
+  box-shadow: 0 9px 7px -1px rgba(11, 11, 11, 0.1),
+    0 2px 20px -1px rgba(11, 11, 11, 0.06);
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.text {
+  font-size: 20px;
+  font-family: Arial;
+  color: #7e63f9;
+  text-transform: uppercase;
+}
+
+.img1 {
+  background-image: url("../img/coffee.jpg");
+  max-width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+p {
+  font-size: 20px;
+}
+.img2 {
+  background-image: url("../img/fashion.jpg");
+  max-width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.more-info {
+  color: #221367;
+  text-decoration: underline;
+  font-size: 23px;
+}
+
+.Texto {
+  display: flex;
+}
+.margin-auto__content {
+  margin: auto;
+  font-size: 40px;
+  margin-top: 35px;
+}
+
+h5 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+}

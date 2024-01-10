@@ -9,3 +9,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  let cartCount = 0;
+
+  const addToCartButtons = document.querySelectorAll(".btn-light");
+
+  addToCartButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      cartCount++;
+
+      document.getElementById("cart-count").innerText = `(${cartCount})`;
+    });
+  });
+});
