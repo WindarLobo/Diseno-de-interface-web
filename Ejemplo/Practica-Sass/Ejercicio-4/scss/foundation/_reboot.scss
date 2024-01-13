@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 5px;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: "Geneva", "sans";
+  background-color: #ccc;
+  color: #000;
+}
+
+article {
+  max-width: 800px;
+  background-color: #fff;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  img {
+    width: 225px;
+    height: 225px;
+    margin-bottom: 10px;
+  }
+}

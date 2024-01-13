@@ -1,0 +1,23 @@
+@use "sass:color";
+
+.border {
+  @each $key, $value in $color-map {
+    &-#{$key} {
+      border: 1px solid color.adjust($value, $lightness: -10%);
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  @for $i from 1 through 10 {
+    &-width-#{$i} {
+      border-width: #{$i}px;
+    }
+  }
+
+  @for $i from 1 through 4 {
+    &-radius-#{$i*25} {
+      border-radius: calc($i / 4) rem;
+    }
+  }
+}

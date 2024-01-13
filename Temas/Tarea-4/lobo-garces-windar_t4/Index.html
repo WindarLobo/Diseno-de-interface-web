@@ -67,12 +67,13 @@
               <li class="nav-item">
 
                 <a class="nav-link" href="#stripe">
-                  Cesta(0)
+                  Cesta<span id="cart-count">(0)</span>
                  </a>
 
                </li>
 
-               <li class="nav-item">
+               
+              <li class="nav-item">
                 <a class="nav-link" href="Acerca.html">Acerca de</a>
               </li>
 
@@ -293,7 +294,7 @@
       </div>
 
     </section>
-
+   
     <section>
 
       <div class="container mt-5 mb-5 "id="mapa">
@@ -312,61 +313,66 @@
    
     </section>
 
-    <section class="section-registro" >
+    <section class="section-registro">
 
-      <div class="container " id="registro">
+      <div class="container mb-5  " id="registro">
+      
 
-        <div class="registro">
-
-          <div class="registro-text-box">
-
-            <h2 class="heading-secondary text-center">Regístrate y obtén beneficios exclusivos</h2>
-
-            <p class="registro-text">
-              Descubre productos exclusivos y ofertas especiales. Regístrate hoy
-              para recibir noticias y promociones. ¡Tu primera compra con descuento!
-            </p>
-
-            <form class="registro-form" name="sign-up" netlify>
-
-              <div>
-
-                <label for="full-name">Nombre completo</label>
-
-                <input  id="full-name"type="text" placeholder="Tu Nombre"  name="full-name"required/>
-
-              </div>
-
-              <div>
-
-                <label for="email">Correo electrónico</label>
-
-                <input id="email" type="email" placeholder="tucorreo@example.com"name="email" required/>
-
-              </div>
-
-              <div>
-
-                <label for="password">Contraseña</label>
-
-                <input id="password"type="password"  placeholder="********" name="password" required />
-
-              </div>
-
-              <button class="btn btn--form" type="submit">Registrarse</button>
-
-            </form>
-
+        <div class="row justify-content-center">
+    
+          <div class="col  col-md-12 col-sm-12 registro">
+    
+            <div class="registro-text-box">
+    
+              <h2 class="heading-secondary text-center">Regístrate y obtén beneficios exclusivos</h2>
+    
+              <p class="registro-text">
+                Descubre productos exclusivos y ofertas especiales. Regístrate hoy
+                para recibir noticias y promociones. ¡Tu primera compra con descuento!
+              </p>
+    
+              <form class="registro-form" name="sign-up" netlify>
+    
+                <div class="form-group">
+    
+                  <label for="full-name">Nombre completo</label>
+    
+                  <input id="full-name" type="text" class="form-control" placeholder="Tu Nombre" name="full-name" required/>
+    
+                </div>
+    
+                <div class="form-group">
+    
+                  <label for="email">Correo electrónico</label>
+    
+                  <input id="email" type="email" class="form-control" placeholder="tucorreo@example.com" name="email" required/>
+    
+                </div>
+    
+                <div class="form-group">
+    
+                  <label for="password">Contraseña</label>
+    
+                  <input id="password" type="password" class="form-control" placeholder="********" name="password" required />
+    
+                </div>
+    
+                <button class="btn btn--form" type="submit">Registrarse</button>
+    
+              </form>
+    
+            </div>
+    
           </div>
-
-          <div class="registro-img-box"role="img"  aria-label="Persona disfrutando de productos"></div>
-
+    
+          <div class="col-md-6 col-sm-12 registro-img-box" role="img" aria-label="Persona disfrutando de productos"></div>
+    
         </div>
-
+    
       </div>
-
+    
     </section>
-
+    
     <footer class="footer">
      
       <div class="container mb-5 grid d-flex grid--footer">

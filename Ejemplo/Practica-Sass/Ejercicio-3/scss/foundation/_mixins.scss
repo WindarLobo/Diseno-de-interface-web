@@ -1,0 +1,11 @@
+@mixin box-color($color, $size: 14px) {
+  $inverted-color: invert($color);
+  $adjusted-lightness: adjust-color($inverted-color, $lightness: 20%);
+  color: $color;
+  background-color: $adjusted-lightness;
+  font-size: $size;
+  margin: $size;
+  padding: $size;
+  line-height: $size * 1.5;
+  border: 5px solid $color;
+}
