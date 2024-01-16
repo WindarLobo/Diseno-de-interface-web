@@ -1,0 +1,104 @@
+// VARIABLES SIMPLES ///////////////////////////////////////////////////////////////////////////////////////////////////
+
+$font-sizes: (
+  "cuerpo": 1rem,
+  "h3": 150%,
+  "h2": 200%,
+  "h1": 300%,
+  "nav ul li": 110%,
+  "footer p": 80%,
+);
+$font-weights: (
+  "light": 300,
+  "regular": 400,
+  "bold": 700,
+);
+$font-family: "Nunito", sans-serif;
+
+$max-width: 1400px;
+$default-margin: 0;
+$default-padding: 0;
+$separador-margin: 0.5em 0 0 0;
+
+$default-foreground: rgb(30, 30, 30);
+$default-background: #eee;
+
+// VARIABLES COMPUESTAS ////////////////////////////////////////////////////////////////////////////////////////////////
+
+$cuerpo: map-get($font-weights, "regular") map-get($font-sizes, "cuerpo")
+  $font-family;
+
+// FUNCIONES ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@function color-aleatorio($opcion: null, $opacity: null) {
+  @if (not($opacity)) {
+    $opacity: 1;
+  }
+
+  $aleatorio: rgba(random(256) - 1, random(256) - 1, random(256) - 1, $opacity);
+
+  @if ($opcion == "red") {
+    @return rgba(red($aleatorio), 0, 0, $opacity);
+  } @else if ($opcion == "green") {
+    @return rgba(0, green($aleatorio), 0, $opacity);
+  } @else if ($opcion == "blue") {
+    @return rgba(0, 0, blue($aleatorio), $opacity);
+  } @else if ($opcion) {
+    @warn "Opción no válida. Se devuelve un color aleatorio en RGB";
+  }
+
+  @return $aleatorio;
+}
+
+$lista-colores: ();
+
+@function color-sin-repetir() {
+  $aleatorio: color-aleatorio(null, 0.5);
+
+  @while (index($lista-colores, $aleatorio)) {
+    $aleatorio: color-aleatorio(null, 0.5);
+  }
+
+  $lista-colores: append($lista-colores, $aleatorio) !global;
+
+  @return $aleatorio;
+}
+
+// MIXINS //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@mixin fuente-titulos {
+  @for $i from 1 through 3 {
+    h#{$i} {
+      font: map-get($font-weights, "bold")
+        map-get($font-sizes, "h" + $i)
+        $font-family;
+      margin: $default-margin;
+    }
+  }
+}
+
+@mixin reset-lista {
+  margin: $default-margin;
+  padding: $default-padding;
+  list-style: none;
+}
+
+@mixin lista-horizontal {
+  @include reset-lista;
+
+  li {
+    display: inline-block;
+    margin: $default-margin;
+    padding: 0.2em;
+    font: map-get($font-weights, "bold") map-get($font-sizes, quote(#{&}))
+      $font-family;
+  }
+}
+
+@mixin fondo-article {
+  @for $i from 1 through 6 {
+    article:nth-child(#{$i}) {
+      background-color: color-sin-repetir();
+    }
+  }
+}

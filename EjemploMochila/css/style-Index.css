@@ -232,3 +232,6 @@ label {
 .footer-link:active {
   color: #1e1e1e;
 }
+a{
+	text-decoration:none;
+}

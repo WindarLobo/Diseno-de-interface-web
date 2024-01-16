@@ -1,0 +1,15 @@
+@mixin title-font() {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@mixin horizontal-list() {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+
+  li {
+    margin: 0 8px;
+  }
+}

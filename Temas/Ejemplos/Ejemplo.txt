@@ -1,0 +1,3 @@
+https://itf-web-advanced.netlify.app/sass/exercises.html#exercise-1
+
+https://www.joshwcomeau.com/css/custom-css-reset/

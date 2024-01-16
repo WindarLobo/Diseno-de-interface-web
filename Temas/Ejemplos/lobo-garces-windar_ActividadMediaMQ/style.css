@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.header,
+.navigation,
+.sidebar,
+.ads,
+.footer {
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 2px solid #2980b9;
+  border-radius: 8px;
+}
+.main {
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  padding: 120px;
+  margin-bottom: 20px;
+  border: 2px solid #2980b9;
+  border-radius: 8px;
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 1020px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1020px) {
+  .container {
+    width: 70%;
+  }
+}
