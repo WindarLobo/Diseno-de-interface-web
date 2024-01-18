@@ -1,0 +1,32 @@
+* {
+  width: 0 auto;
+  padding: 0;
+}
+body {
+  width: 90%;
+}
+.custom-search-input {
+  width: 450px;
+}
+.custom-search-input {
+  position: relative;
+}
+.custom-search-input i {
+  position: absolute;
+  left: 25em;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #787879;
+  cursor: pointer;
+}
+
+.form-control {
+  padding-left: 30px;
+}
+.nav-item {
+  margin-right: 10px; /* Ajusta el espacio entre los elementos li */
+}
+.nav-item span {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #808080; /* Color gris */
+}

@@ -45,11 +45,11 @@ header img {
 }
 header h1 {
   width: 90%;
-  color: rgb(135, 0, 0);
+  color: rgb(164, 0, 0);
 }
 header h2 {
   width: 90%;
-  color: rgb(0, 87, 0);
+  color: rgb(0, 72, 0);
 }
 @media (max-width: 768px) {
   header img {
@@ -118,22 +118,22 @@ section article div {
   padding: 1em 1em 0 0;
 }
 section article:nth-child(1) {
-  background-color: rgba(71, 189, 15, 0.5);
+  background-color: rgba(237, 76, 81, 0.5);
 }
 section article:nth-child(2) {
-  background-color: rgba(92, 253, 14, 0.5);
+  background-color: rgba(242, 99, 175, 0.5);
 }
 section article:nth-child(3) {
-  background-color: rgba(114, 191, 172, 0.5);
+  background-color: rgba(219, 168, 28, 0.5);
 }
 section article:nth-child(4) {
-  background-color: rgba(20, 203, 106, 0.5);
+  background-color: rgba(62, 202, 110, 0.5);
 }
 section article:nth-child(5) {
-  background-color: rgba(177, 94, 52, 0.5);
+  background-color: rgba(11, 199, 156, 0.5);
 }
 section article:nth-child(6) {
-  background-color: rgba(118, 96, 96, 0.5);
+  background-color: rgba(178, 125, 154, 0.5);
 }
 @media (max-width: 992px) {
   section article {

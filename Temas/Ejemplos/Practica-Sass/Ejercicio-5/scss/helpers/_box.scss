@@ -1,6 +1,8 @@
 @use "../mixins/colorbox" as mixins;
+
 @each $key, $value in $color-map {
-  .box-#{$key} {
+  $class-name: unquote(".box-#{$key}");
+  #{$class-name} {
     @include mixins.color-box($value);
   }
 }

@@ -1,4 +1,4 @@
-/* --------------------------- PADDING CLASSES ---------------------------- */
+
 @for $i from 0 through 5 {
   .p-#{$i} {
     padding: calc($i / 3) rem;
@@ -23,7 +23,7 @@
   }
 }
 
-/* --------------------------- MARGIN CLASSES ------------------------------- */
+
 @for $i from 0 through 5 {
   .m-#{$i} {
     margin: calc($i / 3) rem;

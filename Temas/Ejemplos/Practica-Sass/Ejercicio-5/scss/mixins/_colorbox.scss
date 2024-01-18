@@ -1,9 +1,12 @@
 @use "sass:color";
 
-@mixin color-box($color) {
-  color: $color;
-  background-color: rgba($color, 0.15);
-  border: 1px solid color.scale($color, $lightness: -10%);
+@mixin color-box($base-color) {
+  $background-color: rgba($base-color, 0.15);
+  $border-color: color.scale($base-color, $lightness: -10%);
+
+  color: $base-color;
+  background-color: $background-color;
+  border: 1px solid $border-color;
   padding: 1rem;
   margin-bottom: 1rem;
   border-radius: 0.25rem;
