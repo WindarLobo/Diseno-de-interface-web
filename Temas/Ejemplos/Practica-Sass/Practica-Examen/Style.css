@@ -1,7 +1,8 @@
-* {
-  width: 0 auto;
-  padding: 0;
+.navbar {
+  width: 90%;
 }
+/*
+
 body {
   width: 90%;
 }
@@ -24,9 +25,10 @@ body {
   padding-left: 30px;
 }
 .nav-item {
-  margin-right: 10px; /* Ajusta el espacio entre los elementos li */
+  margin-right: 10px; 
 }
 .nav-item span {
   font-family: Arial, Helvetica, sans-serif;
-  color: #808080; /* Color gris */
+  color: #808080; 
 }
+*/
