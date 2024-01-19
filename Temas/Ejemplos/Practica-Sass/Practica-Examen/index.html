@@ -29,73 +29,98 @@
   </head>
   <body>
     <header>
-      <div class="container-fluid">
-        <div class="margen-logo">
-          <nav class="menu">
-            <input type="checkbox" id="menu-toggle" />
-            <label for="menu-toggle" class="menu-icon">
-              <img src="/img/images.png" alt="Logo" width="80" height="54" />
-            </label>
-            <nav class="navbar mt-5">
-              <ul>
-                <li class="nav-item-2">
-                  <a class="nav-link-2" href="#"
-                    ><i class="fa-solid fa-house"></i>HOTEL</a
-                  >
-                </li>
-                <li class="nav-item-2">
-                  <a class="nav-link-2" href="#"
-                    ><i class="fa-solid fa-plane-departure"></i>FLIGHT</a
-                  >
-                </li>
-                <li class="nav-item-2">
-                  <a class="nav-link-2" href="#"
-                    ><i class="fa-solid fa-key"></i>CAR RENTAL</a
-                  >
-                </li>
-                <li class="nav-item-2">
-                  <a class="nav-link-2" href="#"
-                    ><i class="fa-solid fa-map"></i>TOURS</a
-                  >
-                </li>
-              </ul>
-              <p class="copyright ms-4">
-                © 2024 by bookable.All <br />
-                rights reserved.
-              </p>
-            </nav>
-            <div class="custom-search-input mt-5">
-              <input
-                type="search"
-                class="form-control rounded-pill bg-light"
-                placeholder="Search hotels"
-                aria-label="Search"
-              />
-              <i class="fas fa-magnifying-glass"></i>
-            </div>
-            <div
-              class="d-flex justify-content-end align-items-start position-absolute top-0 end-0 me-5 mt-5 ms-5"
-            >
-              <a class="nav-link me-3" href="#">
-                <i class="fa-solid fa-bookmark" style="color: #a19c9c"></i>
-              </a>
-
-              <a class="nav-link me-3" href="#">
-                <i class="fa-solid fa-comments" style="color: #a19c9c"></i>
-              </a>
-
-              <a class="nav-link me-3" href="#">
-                <img
-                  class="rounded-pill"
-                  src="/img/erik-mclean-NzpMaCedoyw-unsplash.jpg"
-                  alt="img"
-                  width="50"
-                  height="44"
-                />
-                <span>Chuky</span>
-              </a>
-            </div>
+      <nav class="btn-menu color">
+        <label for="btn-menu"
+          ><img src="/img/images.png" alt="Logo" width="80" height="54"
+        /></label>
+      </nav>
+      <!--Menu desplegable	--------------->
+      <input type="checkbox" id="btn-menu" />
+      <div class="container-menu">
+        <div class="cont-menu">
+          <nav>
+            <a href="#"><i class="fa-solid fa-house"></i>Hotel</a>
+            <a href="#"><i class="fa-solid fa-plane-departure"></i>FLIGHT</a>
+            <a href="#"><i class="fa-solid fa-key"></i>CAR RENTAL</a>
+            <a href="#"><i class="fa-solid fa-map"></i>TOURS</a>
+            <p class="copyright">
+              © 2024 by bookable.All <br />
+              rights reserved.
+            </p>
           </nav>
+          <label for="btn-menu">✖️</label>
+        </div>
+      </div>
+      <div class="custom-search-input mt-5">
+        <input
+          type="search"
+          class="form-control rounded-pill bg-light"
+          placeholder="Search hotels"
+          aria-label="Search"
+        />
+        <i class="fas fa-magnifying-glass"></i>
+      </div>
+      <div
+        class="iconos d-flex justify-content-end align-items-start position-absolute end- mt-5"
+      >
+        <a class="nav-link me-5" href="#">
+          <i class="fa-solid fa-bookmark" style="color: #8a8888"></i>
+        </a>
+
+        <a class="nav-link me-5" href="#">
+          <i class="fa-solid fa-comments" style="color: #8a8888"></i>
+        </a>
+
+        <a class="nav-link me-5" href="#">
+          <img
+            class="rounded-pill"
+            src="/img/erik-mclean-NzpMaCedoyw-unsplash.jpg"
+            alt="img"
+            width="50"
+            height="44"
+          />
+          <span>Chuky</span>
+        </a>
+      </div>
+
+      <div class="card-group">
+        <div class="card">
+          <img src="img/images.jpg" class="card-img-top" alt="..." />
+        </div>
+        <div class="card">
+          <img
+            src="img/highlight-portblue-club-pollentia-resort-and-spa-hotel-6.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+        </div>
+        <div class="card">
+          <img
+            src="img/sol-costa-daurada-by.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+        </div>
+      </div>
+
+      <div class="capa-2">
+        <h1 class="hotel">Hotel las palmas</h1>
+        <h5 class="m-5">
+          <i class="fa-solid fa-star" style="color: #e21d72"></i>
+          <i class="fa-solid fa-star" style="color: #e21d72"></i>
+          <i class="fa-solid fa-star" style="color: #e21d72"></i>
+          <i class="fa-solid fa-star" style="color: #e21d72"></i>
+          <i class="fa-solid fa-star" style="color: #e21d72"></i>
+        </h5>
+        <div class="ms-auto m-5">
+          <h6 class="underlined">
+            <i class="fa-solid fa-location-dot" style="color: #e21d72"> </i
+            >Albueira, Portugal
+            <span class="badge"
+              >8.6<br />
+              429 Votes</span
+            >
+          </h6>
         </div>
       </div>
     </header>

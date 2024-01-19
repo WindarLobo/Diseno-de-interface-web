@@ -1,79 +1,89 @@
 * {
-  padding: 0;
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  font-family: "Montserrat Alternates", sans-serif;
 }
-
 body {
-  margin: 0;
   padding: 0;
+  margin: 0 auto;
+}
+.color {
+  background-color: rgb(225, 225, 225);
+  height: 5rem;
 }
 
-/*Nav */
-.margen-logo {
-  background-color: rgb(240, 240, 240);
-  margin: 2rem;
-  padding: 10px;
-  height: 90px;
-}
-
-.menu-icon {
-  align-items: center;
-  text-align: center;
-  display: flex;
-}
-.menu-icon img {
-  cursor: pointer;
-}
-#menu-toggle {
-  display: none;
-}
-
-#menu-toggle:checked ~ .navbar {
-  display: grid;
-}
-
-input {
-  font-size: 10px;
-  padding: 5px;
-  display: inline-block;
-}
-
-/* search-input */
 .custom-search-input {
-  width: 450px;
+  width: 800px;
   position: relative;
   left: 14em;
-  bottom: 95px;
+  bottom: 110px;
 }
-.form-control {
-  padding: 8px 16px;
-  border: none;
-  border-radius: 20px;
-}
+
 .fas.fa-magnifying-glass {
   position: absolute;
   top: 50%;
   right: 10px;
   transform: translateY(-50%);
 }
-/*navbar*/
-.navbar {
-  display: none;
-  position: absolute;
-  top: 4.6rem;
-  left: 2.7em;
-  width: 15rem;
-  background-color: rgb(8, 8, 8);
-  height: 100%;
-}
-ul,
-.social-icons {
-  list-style: none;
-  display: inline;
-  margin-bottom: 280px;
+.iconos {
+  margin-left: 95rem;
+  top: -25px;
 }
 
+/*Menù lateral*/
+#btn-menu {
+  display: none;
+}
+
+.container-menu {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.163);
+  top: 5rem;
+  left: 5;
+  width: 100%;
+  height: 100vh;
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+}
+#btn-menu:checked ~ .container-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.cont-menu {
+  width: 100%;
+  max-width: 250px;
+  background: #191919;
+  height: 100vh;
+  position: relative;
+  transition: all 500ms ease;
+  transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu {
+  transform: translateX(0%);
+}
+
+.cont-menu nav a {
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  color: #ffffff;
+  border-left: 5px solid transparent;
+  transition: all 400ms ease;
+}
+.cont-menu nav a:hover {
+  border-left: 5px solid #d820a4;
+  background: #d820a4;
+}
+.cont-menu label {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
 .fa-solid {
   text-decoration: none;
   margin-right: 15px;
@@ -81,23 +91,50 @@ ul,
   transition: background-color 0.3s ease;
   color: #fff;
 }
-li {
-  margin-bottom: 15px;
+.cont-menu label {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
 }
 
-.nav-link-2 {
-  color: #fff;
-  text-decoration: none;
-}
-.nav-link-2:hover,
-.fa:hover,
-li:hover {
-  background-color: rgb(255, 51, 163);
-  width: 10rem;
-}
-/**/
 .copyright {
   font-size: small;
+  margin-top: 33rem;
   text-align: center;
   color: #fff;
+}
+
+.row {
+  --bs-gutter-x: 0;
+  margin: 2rem;
+}
+.capa-2 {
+  height: 4rem;
+  background-color: rgb(225, 225, 225);
+  display: flex;
+  align-items: center;
+}
+.star {
+  color: #e21d72;
+  font-size: 24px;
+}
+.underlined {
+  text-decoration: underline;
+  color: #e21d72;
+}
+
+.hotel {
+  color: rgb(108, 106, 106);
+  margin-left: 18rem;
+}
+.card-group {
+  margin-top: -85px; /* Ajusta el valor según tus necesidades */
+}
+.badge {
+  margin-right: -2.9rem;
+  padding: 1.5rem;
+  background-color: #e21d72;
 }
