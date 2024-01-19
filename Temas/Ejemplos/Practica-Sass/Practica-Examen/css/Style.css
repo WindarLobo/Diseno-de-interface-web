@@ -8,21 +8,21 @@ body {
   margin: 0;
   padding: 0;
 }
-/*Contenedor*/
-.container {
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-}
+
 /*Nav */
-.menu-icon {
+.margen-logo {
+  background-color: rgb(240, 240, 240);
   margin: 2rem;
+  padding: 10px;
+  height: 90px;
+}
+
+.menu-icon {
   align-items: center;
   text-align: center;
-  padding: 10px;
-  background-color: rgb(238, 234, 236);
   display: flex;
+}
+.menu-icon img {
   cursor: pointer;
 }
 #menu-toggle {
@@ -32,15 +32,7 @@ body {
 #menu-toggle:checked ~ .navbar {
   display: grid;
 }
-.navbar {
-  display: none;
-  position: absolute;
-  top: 4rem;
-  left: 2.7em;
-  width: 20%;
-  background-color: rgb(8, 8, 8);
-  height: 100%;
-}
+
 input {
   font-size: 10px;
   padding: 5px;
@@ -52,6 +44,7 @@ input {
   width: 450px;
   position: relative;
   left: 14em;
+  bottom: 95px;
 }
 .form-control {
   padding: 8px 16px;
@@ -64,8 +57,47 @@ input {
   right: 10px;
   transform: translateY(-50%);
 }
+/*navbar*/
+.navbar {
+  display: none;
+  position: absolute;
+  top: 4.6rem;
+  left: 2.7em;
+  width: 15rem;
+  background-color: rgb(8, 8, 8);
+  height: 100%;
+}
+ul,
+.social-icons {
+  list-style: none;
+  display: inline;
+  margin-bottom: 280px;
+}
 
-/* ul li*/
-.nav-item {
-  margin-right: -11px;
+.fa-solid {
+  text-decoration: none;
+  margin-right: 15px;
+  padding: 3px;
+  transition: background-color 0.3s ease;
+  color: #fff;
+}
+li {
+  margin-bottom: 15px;
+}
+
+.nav-link-2 {
+  color: #fff;
+  text-decoration: none;
+}
+.nav-link-2:hover,
+.fa:hover,
+li:hover {
+  background-color: rgb(255, 51, 163);
+  width: 10rem;
+}
+/**/
+.copyright {
+  font-size: small;
+  text-align: center;
+  color: #fff;
 }
