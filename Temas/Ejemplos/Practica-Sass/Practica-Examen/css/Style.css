@@ -4,18 +4,20 @@
   font-family: "Montserrat Alternates", sans-serif;
 }
 body {
-  padding: 0;
-  margin: 0 auto;
+  margin: 20px;
+  font-size: 17px;
+  background-color: rgb(197, 196, 197);
 }
+
 .color {
-  background-color: rgb(225, 225, 225);
+  background-color: rgb(255, 254, 254);
   height: 5rem;
 }
 
 .custom-search-input {
   width: 800px;
   position: relative;
-  left: 14em;
+  left: 25em;
   bottom: 110px;
 }
 
@@ -27,21 +29,24 @@ body {
 }
 .iconos {
   margin-left: 95rem;
-  top: -25px;
+  top: -2px;
 }
 
 /*Menù lateral*/
 #btn-menu {
   display: none;
 }
-
+.logo {
+  margin-left: 15px;
+  margin-top: 15px;
+}
 .container-menu {
   position: absolute;
   background: rgba(0, 0, 0, 0.163);
-  top: 5rem;
+  top: 6.1rem;
   left: 5;
-  width: 100%;
-  height: 100vh;
+  width: 98%;
+  height: 100rem;
   transition: all 500ms ease;
   opacity: 0;
   visibility: hidden;
@@ -53,9 +58,9 @@ body {
 }
 .cont-menu {
   width: 100%;
-  max-width: 250px;
+  max-width: 230px;
   background: #191919;
-  height: 100vh;
+  height: 100rem;
   position: relative;
   transition: all 500ms ease;
   transform: translateX(-100%);
@@ -67,13 +72,13 @@ body {
 .cont-menu nav a {
   display: block;
   text-decoration: none;
-  padding: 20px;
+  padding: 30px;
   color: #ffffff;
   border-left: 5px solid transparent;
   transition: all 400ms ease;
 }
 .cont-menu nav a:hover {
-  border-left: 5px solid #d820a4;
+  border-left: 4px solid #d820a4;
   background: #d820a4;
 }
 .cont-menu label {
@@ -91,18 +96,10 @@ body {
   transition: background-color 0.3s ease;
   color: #fff;
 }
-.cont-menu label {
-  position: absolute;
-  right: 5px;
-  top: 10px;
-  color: #fff;
-  cursor: pointer;
-  font-size: 18px;
-}
 
 .copyright {
   font-size: small;
-  margin-top: 33rem;
+  margin-top: 73rem;
   text-align: center;
   color: #fff;
 }
@@ -113,17 +110,18 @@ body {
 }
 .capa-2 {
   height: 4rem;
-  background-color: rgb(225, 225, 225);
+  background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
+  margin-top: 0.5px;
 }
 .star {
-  color: #e21d72;
+  color: #d820a4;
   font-size: 24px;
 }
 .underlined {
   text-decoration: underline;
-  color: #e21d72;
+  color: #d820a4;
 }
 
 .hotel {
@@ -131,10 +129,37 @@ body {
   margin-left: 18rem;
 }
 .card-group {
-  margin-top: -85px; /* Ajusta el valor según tus necesidades */
+  margin-top: -86px; /* Ajusta el valor según tus necesidades */
 }
 .badge {
-  margin-right: -2.9rem;
+  height: 4rem;
+  margin-right: -3.1rem;
   padding: 1.5rem;
-  background-color: #e21d72;
+  margin-top: 8px;
+  background-color: #d820a4;
+}
+.sectiones {
+  background-color: rgb(255, 255, 255);
+  width: 38%;
+}
+.footer {
+  padding: 3rem;
+  border-top: 1px solid #eee;
+}
+.nav {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.d-imgs {
+  display: flex;
+}
+
+.d-imgs img {
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+  margin-right: -2rem;
+  border: 2px solid #fdf2e9;
 }
