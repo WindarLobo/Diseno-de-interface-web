@@ -6,11 +6,10 @@
 body {
   margin: 20px;
   font-size: 17px;
-  background-color: rgb(197, 196, 197);
 }
 
 .color {
-  background-color: rgb(255, 254, 254);
+  background-color: rgb(220, 217, 217);
   height: 5rem;
 }
 
@@ -28,6 +27,7 @@ body {
   transform: translateY(-50%);
 }
 .iconos {
+  font-size: 19px;
   margin-left: 95rem;
   top: -2px;
 }
@@ -78,8 +78,8 @@ body {
   transition: all 400ms ease;
 }
 .cont-menu nav a:hover {
-  border-left: 4px solid #d820a4;
-  background: #d820a4;
+  border-left: 4px solid #e21d72;
+  background: #e21d72;
 }
 .cont-menu label {
   position: absolute;
@@ -110,18 +110,18 @@ body {
 }
 .capa-2 {
   height: 4rem;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(220, 217, 217);
   display: flex;
   align-items: center;
   margin-top: 0.5px;
 }
 .star {
-  color: #d820a4;
+  color: #e21d72;
   font-size: 24px;
 }
 .underlined {
   text-decoration: underline;
-  color: #d820a4;
+  color: #e21d72;
 }
 
 .hotel {
@@ -134,17 +134,19 @@ body {
 .badge {
   height: 4rem;
   margin-right: -3.1rem;
-  padding: 1.5rem;
-  margin-top: 8px;
-  background-color: #d820a4;
+  padding: 1rem;
+  margin-top: 9px;
+  border-radius: 0%;
+  background-color: #e21d72;
 }
 .sectiones {
-  background-color: rgb(255, 255, 255);
+  margin-left: 18rem;
+  background-color: rgb(220, 217, 217);
   width: 38%;
 }
 .footer {
   padding: 3rem;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #b3b3b3;
 }
 .nav {
   grid-column: span 2;
@@ -162,4 +164,73 @@ body {
   border-radius: 50%;
   margin-right: -2rem;
   border: 2px solid #fdf2e9;
+}
+.Sale {
+  background-color: #e21d72;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 3px 6px;
+  height: 1.3rem;
+  width: 1.5rem;
+  margin-left: 0.9rem;
+  margin-bottom: -0.9rem;
+  border-radius: 50%;
+}
+.section-2 {
+  width: 13%;
+  margin-bottom: -10rem;
+  right: 30rem;
+  background-color: rgb(220, 217, 217);
+}
+.imgs-2 {
+  display: flex;
+}
+
+.imgs-2 img {
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+  margin-left: 85px;
+}
+.cliente {
+  margin-top: 4.5rem;
+  font-size: small;
+  color: #717070;
+  margin-left: 7.3rem;
+}
+.puntuacion {
+  margin-top: -5rem;
+  margin-left: 12rem;
+  font-size: x-large;
+  color: #e21d72;
+}
+.section-3 {
+  width: 13%;
+  bottom: -20rem;
+  right: 30rem;
+  background-color: rgb(220, 217, 217);
+}
+.comillas {
+  font-size: 50px;
+  font-weight: bold;
+  padding: 3px 6px;
+  height: 1.3rem;
+  width: 1.5rem;
+  margin-top: -4rem;
+  margin-left: -1rem;
+}
+.more-info:link,
+.more-info:visited {
+  color: #e21d72;
+  margin-bottom: -30rem;
+  display: inline-block;
+  left: 80rem;
+  font-size: large;
+  text-decoration: underline;
+}
+
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
 }
