@@ -27,199 +27,206 @@
     <link rel="stylesheet" href="css/Style.css" />
   </head>
   <body>
-    <nav class="btn-menu color">
-      <label for="btn-menu"
-        ><img
-          class="logo"
-          src="/img/images.png"
-          alt="Logo"
-          width="80"
-          height="54"
-      /></label>
-    </nav>
-    <!--Menu desplegable	--------------->
-    <input type="checkbox" id="btn-menu" />
-    <div class="container-menu">
-      <div class="cont-menu">
-        <nav>
-          <a href="#"><i class="fa-solid fa-house"></i>Hotel</a>
-          <a href="#"><i class="fa-solid fa-plane-departure"></i>FLIGHT</a>
-          <a href="#"><i class="fa-solid fa-key"></i>CAR RENTAL</a>
-          <a href="#"><i class="fa-solid fa-map"></i>TOURS</a>
-          <p class="copyright">
-            © 2024 by bookable.All <br />
-            rights reserved.
-          </p>
-        </nav>
-        <label for="btn-menu">✖️</label>
+    <!--Menu principal-->
+    <div class="container-fluid mt-5">
+      <div class="btn-menu">
+        <label for="btn-menu"
+          ><img
+            class="logo mt-3"
+            src="/img/images.png"
+            alt="Logo"
+            width="80"
+            height="54"
+        /></label>
+      
+        <div class="custom-search-input mt-5">
+          <input
+            type="search"
+            class="form-control rounded-pill bg-light text-white"
+            placeholder="Search hotels"
+            aria-label="Search"
+          />
+          <i class="fas fa-magnifying-glass"></i>
+        </div>
+        <div class="iconos d-flex align-items-start position-absolute end- mt-5">
+          <a class="nav-link me-5" href="#">
+            <div class="position-absolute logo-menu">7</div>
+            <i class="fa-solid fa-bookmark mt-1" style="color: #8a8888"></i>
+          </a>
+          <a class="nav-link me-5" href="#">
+            <div class="position-absolute logo-menu">13</div>
+            <i class="fa-solid fa-comments mt-2" style="color: #8a8888"></i>
+          </a>
+          <a class="nav-link" href="#">
+            <img
+              class="rounded-pill"
+              src="/img/erik-mclean-NzpMaCedoyw-unsplash.jpg"
+              alt="img"
+              width="40"
+              height="35"
+            />
+            <span>Chuky</span>
+          </a>
+        </div>
+        </div>
+        </div>
+        
+      <!--Menu desplegable	--------------->
+      <input type="checkbox" id="btn-menu" />
+      <div class="container-menu">
+        <div class="cont-menu">
+        
+            <a href="#"><i class="fa-solid fa-house"></i>Hotel</a>
+            <a href="#"><i class="fa-solid fa-plane-departure"></i>FLIGHT</a>
+            <a href="#"><i class="fa-solid fa-key"></i>CAR RENTAL</a>
+            <a href="#"><i class="fa-solid fa-map"></i>TOURS</a>
+            <p class="copyright">
+              © 2024 by bookable.All <br />
+              rights reserved.
+            </p>
+       
+          <label for="btn-menu" >✖️</label>
+        </div>
+      </div>
+    <!--Card imagenes-->
+    <div class="container-fluid" >
+      <div class="card-group">
+        <div class="card">
+          <img src="img/images.jpg" class="card-img-top" alt="..." />
+        </div>
+        <div class="card">
+          <img
+            src="img/highlight-portblue-club-pollentia-resort-and-spa-hotel-6.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+        </div>
+        <div class="card">
+          <img
+            src="img/sol-costa-daurada-by.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+        </div>
       </div>
     </div>
-    <div class="custom-search-input mt-5">
-      <input
-        type="search"
-        class="form-control rounded-pill bg-light text-white"
-        placeholder="Search hotels"
-        aria-label="Search"
-      />
-      <i class="fas fa-magnifying-glass"></i>
-    </div>
-    <div
-      class="iconos d-flex  align-items-start position-absolute end- mt-5"
-    >
-      <a class="nav-link me-5" href="#">
-        <div class=" position-absolute Sale ">
-        7
-        </div> <i class="fa-solid fa-bookmark mt-1" style="color: #8a8888"></i>
-
-      <a class="nav-link me-5" href="#">
-        <div class="position-absolute Sale">
-         13
-          </div>
-        <i class="fa-solid fa-comments mt-2" style="color: #8a8888"></i>
-      </a>
-
-      <a class="nav-link me-5" href="#">
-        <img
-          class="rounded-pill"
-          src="/img/erik-mclean-NzpMaCedoyw-unsplash.jpg"
-          alt="img"
-          width="50"
-          height="44"
-        />
-        <span>Chuky</span>
-      </a>
-    </div>
-
-    <div class="card-group">
-      <div class="card">
-        <img src="img/images.jpg" class="card-img-top" alt="..." />
-      </div>
-      <div class="card">
-        <img
-          src="img/highlight-portblue-club-pollentia-resort-and-spa-hotel-6.jpg"
-          class="card-img-top"
-          alt="..."
-        />
-      </div>
-      <div class="card">
-        <img
-          src="img/sol-costa-daurada-by.jpg"
-          class="card-img-top"
-          alt="..."
-        />
-      </div>
-    </div>
-
-    <div class="capa-2">
-      <h1 class="hotel">Hotel las palmas</h1>
-      <h5 class="m-5">
-        <i class="fa-solid fa-star" style="color: #e21d72"></i>
-        <i class="fa-solid fa-star" style="color: #e21d72"></i>
-        <i class="fa-solid fa-star" style="color: #e21d72"></i>
-        <i class="fa-solid fa-star" style="color: #e21d72"></i>
-        <i class="fa-solid fa-star" style="color: #e21d72"></i>
-      </h5>
-      <div class="ms-auto m-5">
-        <h6 class="underlined">
-          <i class="fa-solid fa-location-dot" style="color: #e21d72"> </i
-          >Albueira, Portugal
-          <span class="badge"
-            >8.6<br />
-            429 Votes</span
-          >
+    <div class="container-fluid">
+      <div class="capa-2">
+        <h1 class="hotel separate-div-1 ms-3">Hotel las palmas</h1>
+        <h6 class="m-3 ">
+          <i class="fa-solid fa-star separate-div-2 " style="color: #e21d72"></i>
+          <i class="fa-solid fa-star separate-div-3 " style="color: #e21d72"></i>
+          <i class="fa-solid fa-star separate-div-4" style="color: #e21d72"></i>
+          <i class="fa-solid fa-star separate-div-5" style="color: #e21d72"></i>
+          <i class="fa-solid fa-star separate-div-6" style="color: #e21d72"></i>
         </h6>
+        <div class="ms-auto m-5">
+          <h6 class="underlined">
+            <i class="fa-solid fa-location-dot" style="color: #e21d72"> </i
+            >Albueira, Portugal
+            <span class="badge"
+              >8.6<br />
+              429 Votes</span
+            >
+          </h6>
+        </div>
       </div>
     </div>
-
+      <!--Seccion 1-->
+    
     <section>
-      <div class="container mt-5 position-absolute sectiones">
-        <p class="mt-5 m-5">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo a
-          est et suscipit. Aenean sit amet lacinia nisi. Nunc cursus, augue in
-          tincidunt dictum, eros nibh mollis diam, in lacinia dolor turpis id
-          erat. Donec lorem elit, aliquet nec efficitur at, porta non purus. Sed
-          porttitor euismod elementum. Nam at varius nisi. Praesent id augue a
-          neque faucibus euismod.
-        </p>
-        <p class="mt-3 m-5">
-          Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-          per inceptos himenaeos. Morbi vitae semper magna. Nunc fringilla
-        </p>
-
-        <footer class="footer">
-          <nav class="nav">
-            <div class="m-3">
-              <i class="fa-solid fa-chevron-right" style="color: #e21d72"></i>
-              Close to the beach
+       <div class="container-fluid mt-5 position-absolute section-1 separate-div-7" >
+          <p class="m-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo a
+            est et suscipit. Aenean sit amet lacinia nisi. Nunc cursus, augue in
+            tincidunt dictum, eros nibh mollis diam, in lacinia dolor turpis id
+            erat. Donec lorem elit, aliquet nec efficitur at, porta non purus. Sed
+            porttitor euismod elementum. Nam at varius nisi. Praesent id augue a
+            neque faucibus euismod.
+          </p>
+          <p class="mt-3 m-3">
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+            per inceptos himenaeos. Morbi vitae semper magna. Nunc fringilla
+          </p>
+  
+          <footer class="footer">
+            <nav class="nav">
+              <div >
+                <i class="fa-solid fa-chevron-right" style="color: #e21d72"></i>
+                Close to the beach
+              </div>
+              <div >
+                <i class="fa-solid fa-chevron-right" style="color: #e21d72"></i>
+                Breakfast incluided
+              </div>
+              <div >
+                <i class="fa-solid fa-chevron-right" style="color: #e21d72"></i
+                >
+                Free airports shuttle
+              </div>
+  
+              <div >
+                <i class="fa-solid fa-chevron-right" style="color: #e21d72"></i>
+                Free wifi in all rooms
+              </div>
+            </nav>
+            <nav class="nav">
+              <div class="mt-3">
+                <i class="fa-solid fa-chevron-right" style="color: #e21d72"></i>
+                Air condictioning and heating
+              </div>
+  
+              <div class="mt-3">
+                <i class="fa-solid fa-chevron-right" style="color: #e21d72"></i>
+                Pets allowed
+              </div>
+  
+              <div>
+                <i class="fa-solid fa-chevron-right" style="color: #e21d72"></i> We
+                 speak all languajes
+              </div>
+  
+              <div>
+                <i class="fa-solid fa-chevron-right" style="color: #e21d72"></i> 
+                 Perfect families
+              </div>
+            </nav>
+          </footer>
+          <footer class="footer">
+            <div class="d-imgs">
+              <p class="mt-3"> Lucy and 3 other friends recommend this hotel. </p>
+              <img
+                src="img/aldi-sigun-K-sdQ12jZeY-unsplash.jpg"
+                alt="Friend 1"
+                class="img"
+              />
+              <img
+                src="img/erik-mclean-NzpMaCedoyw-unsplash.jpg"
+                alt="Friend 2"
+                class="img "
+              />
+              <img
+                src="img/justin-lim-tloFnD-7EpI-unsplash.jpg"
+                alt="Friend 3"
+                class="img "
+              />
+              <img
+                src="img/highlight-portblue-club-pollentia-resort-and-spa-hotel-6.jpg"
+                alt="Friend 4"
+                class="img "
+              />
             </div>
-            <div class="m-3">
-              <i class="fa-solid fa-chevron-right" style="color: #e21d72"></i
-              >Breakfast incluided
-            </div>
-            <div class="m-3">
-              <i class="fa-solid fa-chevron-right" style="color: #e21d72"></i
-              >Free airports shuttle
-            </div>
-
-            <div class="m-3">
-              <i class="fa-solid fa-chevron-right" style="color: #e21d72"></i
-              >Free wifi in all rooms
-            </div>
-          </nav>
-          <nav class="nav">
-            <div class="m-3">
-              <i class="fa-solid fa-chevron-right" style="color: #e21d72"></i
-              >Air condictioning and heating
-            </div>
-
-            <div class="m-3">
-              <i class="fa-solid fa-chevron-right" style="color: #e21d72"></i
-              >Pets allowed
-            </div>
-
-            <div class="m-3">
-              <i class="fa-solid fa-chevron-right" style="color: #e21d72"></i>We
-              speak all languajes
-            </div>
-
-            <div class="m-3">
-              <i class="fa-solid fa-chevron-right" style="color: #e21d72"></i
-              >Perfect families
-            </div>
-          </nav>
-        </footer>
-        <footer class="footer">
-          <div class="d-imgs">
-            <p class="mt-3">Lucy and 3 other friends recommend this hotel</p>
-            <img
-              src="img/aldi-sigun-K-sdQ12jZeY-unsplash.jpg"
-              alt="Friend 1"
-              class="ms-5"
-            />
-            <img
-              src="img/erik-mclean-NzpMaCedoyw-unsplash.jpg"
-              alt="Friend 2"
-              class="img-thumbnail"
-            />
-            <img
-              src="img/justin-lim-tloFnD-7EpI-unsplash.jpg"
-              alt="Friend 3"
-              class="img-thumbnail"
-            />
-            <img
-              src="img/highlight-portblue-club-pollentia-resort-and-spa-hotel-6.jpg"
-              alt="Friend 4"
-              class="img-thumbnail"
-            />
-          </div>
-        </footer>
-      </div>
-    </section>
-    <section>
-      <div class="container position-absolute mt-5  section-2 ">
+          </footer>
+          
+        </div>
+      </section>
+  
+    <!--Seccion 2-->
+     <section>
+      <div class="container-fluid position-absolute mt-5  section-2" >
         <p class="mt-5 ms-3 ">
           <div class="position-absolute comillas">
-          <i class="fa-sharp fa-solid fa-quote-left" style="color: rgb(193, 190, 190);"></i></div>
+          <i class="fa-sharp fa-solid fa-quote-left" style="color: rgb(202, 200, 200);"></i></div>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo a
           est et suscipit. Aenean sit amet lacinia nisi.
         </p>
@@ -228,22 +235,23 @@
           <img
             src="img/aldi-sigun-K-sdQ12jZeY-unsplash.jpg"
             alt="Friend 1"
-            class="mt-3 ms-auto"
+            class="mt-3"
           />
-          <p class="m-5 mt-3">Niky Smith</p>
+          <p class="position-relative nombre">Niky <br/> Smith</p>
           <div class="position-absolute cliente">
             feb 23rd,<br/>2017</div>
           </div> 
         <div class="position-absolute  puntuacion"> 7.8</div>
       </div>
     
-      
     </section>
-    <section>
-      <div class="container position-absolute mt-5  section-3 ">
+     <!--Seccion 3-->
+   
+     <section>
+      <div class="container-fluid position-absolute mt-5  section-3 ">
         <p class="mt-5 ms-3 ">
           <div class="position-absolute comillas">
-            <i class="fa-sharp fa-solid fa-quote-left" style="color: rgb(193, 190, 190);"></i></div>
+            <i class="fa-sharp fa-solid fa-quote-left" style="color: rgb(202, 200, 200);"></i></div>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo a
           est et suscipit. Aenean sit amet lacinia nisi.
         </p>
@@ -252,9 +260,9 @@
           <img
           src="img/erik-mclean-NzpMaCedoyw-unsplash.jpg"
             alt="Friend 1"
-            class="mt-3 ms-auto"
+            class="mt-3"
           />
-          <p class="m-5 mt-3">chuky Thomas</p>
+          <p class="position-relative nombre">chuky<br/> Thomas</p>
           <div class="position-absolute cliente">
             feb 23rd,<br/>2017</div>
           </div> 
@@ -262,12 +270,16 @@
         
       </div>
     </section>
-    <div clas="container position-absolute mt-5 " >
-      <a href="https://"  class="more-info position-absolute bottom-0 end-0"
+  <div clas="container-fluid position-absolute mt-5 " >
+      <a href="https://" class="more-info position-absolute bottom-0 end-0"
       >Show all &rarr;</a
     >
     </div>
+    <div class="Good">
+     GOOD NEWS! WE HAVE 4 FREE ROOMS FOR YOUR SELECTED DATES!
+    </div>
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="BOOK btn " type="button">BOOK  NOW</button>
+    </div>  </body>
  
-    
-  </body>
 </html>
