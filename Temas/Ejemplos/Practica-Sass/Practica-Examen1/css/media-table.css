@@ -1,0 +1,246 @@
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .form-control {
+    width: 50%;
+    padding: 0.5%;
+    position: relative;
+    left: 18%;
+    bottom: 2.5rem;
+  }
+
+  .fas.fa-magnifying-glass {
+    position: absolute;
+    bottom: 2.3rem;
+    left: 65%;
+    font-size: small;
+    transform: translateY(-50%);
+  }
+  .iconos {
+    font-size: 20px;
+    margin-left: 72%;
+    top: 2%;
+    display: flex;
+  }
+
+  .logo-menu {
+    font-size: 11px;
+    padding: 5px 5px;
+    height: 23%;
+    width: 30%;
+    margin-left: 0.7rem;
+    bottom: -0.3rem;
+    border-radius: 50%;
+  }
+  .chuky {
+    margin-left: 18%;
+    height: 3rem;
+    width: 3rem;
+  }
+  .chuky-link {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  /*menu flex*/
+  #btn-menu {
+    display: none;
+  }
+  .logo {
+    pointer-events: none;
+  }
+  .cont-menu a:hover {
+    padding: 1rem;
+  }
+  .container-menu {
+    position: flex;
+    text-align: center;
+    background-color: #000;
+    padding: 1rem;
+  }
+  .cont-menu a {
+    font-size: 16px;
+    cursor: pointer;
+    margin: 3%;
+    color: #ffffff;
+  }
+
+  .cont-menu label {
+    color: #fff;
+    display: none;
+  }
+  .copyright {
+    display: none;
+  }
+
+  /*card imagenes*/
+  .card-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  .card {
+    margin: 0;
+  }
+  .card-img {
+    width: 100%;
+    height: auto;
+  }
+  /* Capa 2*/
+
+  .capa-2 {
+    margin-top: -0.3rem;
+  }
+
+  .hotel {
+    font-size: 20px;
+    white-space: nowrap;
+    margin-left: 1rem;
+  }
+  .ubicacion {
+    font-size: 16px;
+    margin-left: 12rem;
+    height: auto;
+  }
+  .fa-star {
+    white-space: nowrap;
+    font-size: 13px;
+  }
+  .badge {
+    white-space: nowrap;
+    font-size: 10px;
+    padding: 1.5%;
+  }
+  /*Sectiones-1*/
+
+  section {
+    margin-left: 1rem;
+    width: 45%;
+    margin-top: 5%;
+    font-size: 13px;
+    padding: 1rem;
+  }
+  .footer {
+    padding: 3rem;
+    border-top: 1px solid #b3b3b3;
+  }
+  .nav {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9px;
+    white-space: nowrap;
+    margin-left: -3rem;
+  }
+  .d-imgs {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .texto {
+    margin-left: -19%;
+    margin-top: 8%;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  .d-imgs img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    margin-right: -1rem;
+  }
+  /*Seccion 2*/
+
+  .section-2 {
+    width: 20%;
+    height: auto;
+    right: 20%;
+    margin-top: 53%;
+    position: absolute;
+  }
+  .imgs-2 {
+    display: flex;
+  }
+
+  .imgs-2 img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    margin-top: 3rem;
+  }
+  .cliente {
+    margin-top: 5rem;
+    font-size: small;
+    margin-left: -3rem;
+  }
+
+  .nombre {
+    margin-left: 1rem;
+    margin-top: 25%;
+  }
+  .puntuacion {
+    position: absolute;
+    margin-top: -5rem;
+    margin-left: 9rem;
+    font-size: x-large;
+    color: #e21d72;
+  }
+  .comillas {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 15px 5px;
+    height: 1.3rem;
+    width: 1.5rem;
+    margin-top: -2.6rem;
+    margin-left: -1rem;
+  }
+  /*Seccion 3*/
+  .section-3 {
+    width: 20%;
+    height: auto;
+    right: 20%;
+    margin-top: 80%;
+    position: absolute;
+  }
+  /*link*/
+  .info:link,
+  .info:visited {
+    color: #e21d72;
+    font-size: large;
+    text-decoration: underline;
+    margin-left: 32rem;
+  }
+  .info-total {
+    margin-top: -2rem;
+  }
+
+  .info:hover,
+  .info:active {
+    text-decoration: none;
+  }
+  .Good {
+    position: absolute;
+    text-align: center;
+    color: #717070;
+    margin-top: 58%;
+    margin-left: 77%;
+    font-size: 15px;
+    padding: 3%;
+  }
+  /*Book*/
+
+  .BOOK {
+    position: absolute;
+    background: linear-gradient(100deg, #e21d72, rgb(122, 26, 93));
+    color: #fff;
+    padding: 10px 25px;
+    height: auto;
+    left: 80%;
+    margin-top: -22rem;
+    font-size: 13px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .BOOK:hover {
+    color: #000;
+    background-color: #fff;
+  }
+}

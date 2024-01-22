@@ -1,0 +1,285 @@
+@media screen and (min-width: 993px) {
+  /*menu principal*/
+  .form-control {
+    width: 50%;
+    padding: 0.6%;
+    position: relative;
+    left: 19%;
+    bottom: 2rem;
+  }
+
+  .fas.fa-magnifying-glass {
+    position: absolute;
+    bottom: 2.2rem;
+    left: 67%;
+    font-size: small;
+    transform: translateY(-50%);
+  }
+  .iconos {
+    font-size: 23px;
+    margin-left: 78%;
+    top: 2%;
+    display: flex;
+  }
+
+  .logo-menu {
+    font-size: 13px;
+    padding: 5px 5px;
+    height: 23%;
+    width: 30%;
+    margin-left: 0.7rem;
+    bottom: -0.3rem;
+    border-radius: 50%;
+  }
+  .chuky {
+    margin-left: 18%;
+    height: 3rem;
+    width: 3rem;
+  }
+  .chuky-link {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  /*Menù lateral*/
+  #btn-menu {
+    display: none;
+  }
+
+  .container-menu {
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    width: 18%;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+  }
+  #btn-menu:checked ~ .container-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  .cont-menu {
+    height: auto;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+  }
+  #btn-menu:checked ~ .container-menu .cont-menu {
+    transform: translateX(0%);
+  }
+
+  .cont-menu a {
+    display: block;
+    text-decoration: none;
+    padding: 30px;
+    color: #ffffff;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+    font-size: 17px;
+  }
+  .cont-menu a:hover {
+    border-left: 4px solid #e21d72;
+    background: #e21d72;
+  }
+  .cont-menu label {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .fa-solid {
+    text-decoration: none;
+    margin-right: 15px;
+    padding: 3px;
+    transition: background-color 0.3s ease;
+    color: #fff;
+  }
+  .copyright {
+    font-size: 16px;
+    margin-top: 45rem;
+    text-align: center;
+    color: #fff;
+  }
+
+  /*card imagenes*/
+  .card-group {
+    display: flex;
+    margin: 0;
+  }
+  .card {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Capa 2*/
+
+  .capa-2 {
+    margin-top: -0.3rem;
+  }
+
+  .hotel {
+    font-size: 30px;
+    white-space: nowrap;
+    margin-left: 10rem;
+  }
+  .ubicacion {
+    font-size: 20px;
+    margin-left: 20rem;
+    height: auto;
+  }
+  .fa-star {
+    white-space: nowrap;
+    font-size: 19px;
+  }
+  .badge {
+    white-space: nowrap;
+    font-size: 13px;
+    padding: 1.5%;
+  }
+
+  /*Sectiones-1*/
+
+  section {
+    margin-left: 1rem;
+    width: 45%;
+    margin-top: 2%;
+    font-size: 15px;
+    padding: 1rem;
+  }
+  .footer {
+    padding: 3rem;
+    border-top: 1px solid #b3b3b3;
+  }
+  .nav {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9px;
+    white-space: nowrap;
+    margin-left: rem;
+  }
+  .d-imgs {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .texto {
+    margin-left: -1%;
+    margin-top: 8%;
+    font-size: 15px;
+    white-space: nowrap;
+  }
+  .d-imgs img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    margin-right: -1rem;
+  }
+
+  /*Seccion 2*/
+
+  .section-2 {
+    width: 12%;
+    height: auto;
+    right: 17%;
+    top: 30rem;
+    position: absolute;
+  }
+  .imgs-2 {
+    display: flex;
+  }
+
+  .imgs-2 img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    margin-top: 3rem;
+  }
+  .cliente {
+    margin-top: 5rem;
+    font-size: small;
+    margin-left: -2.8rem;
+  }
+
+  .nombre {
+    margin-top: 25%;
+    margin-left: 0.6rem;
+  }
+  .puntuacion {
+    position: absolute;
+    margin-top: -5rem;
+    margin-left: 8rem;
+    font-size: x-large;
+    color: #e21d72;
+  }
+  .comillas {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 15px 5px;
+    height: 1.3rem;
+    width: 1.5rem;
+    margin-top: -2rem;
+    margin-left: -1rem;
+  }
+  /*Seccion 3*/
+  .section-3 {
+    width: 12%;
+    right: 17%;
+    top: 48rem;
+    position: absolute;
+  }
+  /*link*/
+  .info:link,
+  .info:visited {
+    color: #e21d72;
+    font-size: large;
+    text-decoration: underline;
+    margin-left: 72%;
+  }
+  .info-total {
+    margin-top: 1rem;
+  }
+
+  .info:hover,
+  .info:active {
+    text-decoration: none;
+  }
+
+  .Good {
+    position: absolute;
+    text-align: center;
+    color: #717070;
+    margin-top: 35%;
+    margin-left: 80%;
+    font-size: 15px;
+    padding: 5%;
+  }
+  /*Book*/
+
+  .BOOK {
+    position: absolute;
+    background: linear-gradient(100deg, #e21d72, rgb(122, 26, 93));
+    color: #fff;
+    padding: 10px 25px;
+    height: auto;
+    left: 84%;
+    margin-top: -28rem;
+    font-size: 13px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .BOOK:hover {
+    color: #000;
+    background-color: #fff;
+  }
+}

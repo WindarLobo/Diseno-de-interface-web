@@ -21,6 +21,7 @@ a {
 }
 .custom-search-input {
   position: relative;
+  color: #717070;
 }
 
 .iconos {
@@ -32,8 +33,6 @@ a {
   text-decoration: none;
 }
 .chuky {
-  height: 2.5rem;
-  width: 2.5rem;
   border-radius: 50%;
 }
 .logo-menu {
@@ -55,8 +54,11 @@ a {
   color: #ffffff;
 }
 .cont-menu a:hover {
-  border-left: 3px solid #e21d72;
-  background: #e21d72;
+  border-left-color: #e21d72;
+  background-color: #e21d72;
+}
+.cont-menu {
+  transition: border-left-color 0.3s ease, background-color 0.3s ease;
 }
 
 .cont-menu label {
@@ -65,9 +67,9 @@ a {
   display: none;
 }
 .capa-2 {
+  display: flex;
   align-items: center;
   background-color: rgb(220, 217, 217);
-  display: flex;
   box-shadow: 0 4px 6px 1px rgba(42, 42, 42, 0.1);
 }
 .hotel {
@@ -79,13 +81,14 @@ a {
   cursor: pointer;
 }
 .badge {
-  width: 0 auto;
   color: #fff;
   margin-inline-start: auto;
   border-radius: 0%;
   background-color: #e21d72;
 }
 section {
+  width: 0;
+  height: auto;
   background-color: rgb(220, 217, 217);
 }
 .footer {
@@ -111,7 +114,6 @@ section {
   height: auto;
   max-width: 100%;
   border-radius: 50%;
-  border: 2px solid #fdf2e9;
 }
 .cliente {
   color: #717070;

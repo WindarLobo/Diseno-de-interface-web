@@ -3,7 +3,7 @@
   .form-control {
     width: 46%;
     position: relative;
-    left: 20%;
+    left: 18%;
     bottom: 2rem;
   }
 
@@ -31,6 +31,8 @@
     border-radius: 50%;
   }
   .chuky {
+    height: 2.5rem;
+    width: 2.5rem;
     margin-top: -2%;
     margin-left: 8%;
   }
@@ -44,7 +46,9 @@
   #btn-menu {
     display: none;
   }
-
+  .logo {
+    pointer-events: none;
+  }
   .cont-menu {
     font-size: 15px;
     display: flex;
@@ -85,21 +89,25 @@
   /* Capa 2*/
 
   .capa-2 {
-    height: 4%;
     margin-top: -0.3rem;
   }
-
   .hotel {
-    font-size: 13px;
+    font-size: 15px;
+    display: inline-block;
     margin-left: 1rem;
   }
   .ubicacion {
-    font-size: 13px;
-    margin-left: 10rem;
-  }
+    font-size: 15px;
 
+    margin-left: 5rem;
+  }
+  .fa-location-dot,
+  .fa-star {
+    font-size: 10px;
+    margin-left: 0.2rem;
+  }
   .badge {
-    font-size: 12px;
+    font-size: 10px;
     padding: 3.6%;
   }
 
@@ -110,7 +118,7 @@
     margin: 2%;
     width: 90%;
     font-size: 12px;
-    padding: 3%;
+    padding: 2%;
   }
 
   .nav {
@@ -118,7 +126,7 @@
     font-size: 11px;
   }
   .d-imgs {
-    margin-right: -9%;
+    margin-left: 8%;
   }
   .texto {
     margin-left: -10%;
@@ -131,25 +139,28 @@
     margin-right: -2rem;
   }
   /*Seccion 2*/
-
-  .img-section {
-    margin-bottom: -3rem;
+  .section-2 {
+    width: 90%;
   }
+
   .imgs-2 img {
-    width: 70px;
-    height: 60px;
-    margin-top: 1rem;
+    height: 4rem;
+    width: 4rem;
+    margin-bottom: -3.6rem;
     border-radius: 50%;
   }
   .cliente {
-    font-size: 15px;
-    margin-left: 26%;
-    margin-top: -2rem;
+    top: 13rem;
+    font-size: small;
+    color: #717070;
+    margin-left: 6rem;
+    margin-bottom: 3rem;
   }
 
   .nombre {
-    margin-left: 28%;
-    margin-bottom: 3rem;
+    color: #000;
+    top: -1rem;
+    margin-left: 6rem;
   }
   .puntuacion {
     margin-top: -5rem;
@@ -157,15 +168,14 @@
     font-size: 25px;
   }
   .comillas {
-    font-size: 40px;
+    font-size: 45px;
     padding: 3px 6px;
-    margin-top: -1.5rem;
-    margin-left: -1rem;
+    margin-top: -1.7rem;
+    margin-left: -0.8rem;
   }
   /*Seccion 3*/
   .section-3 {
-    margin-top: 10%;
-    background-color: rgb(220, 217, 217);
+    width: 90%;
   }
 
   /*link*/
@@ -176,7 +186,7 @@
     text-decoration: underline;
   }
   .info-total {
-    margin-top: 5rem;
+    margin-top: 1rem;
     align-items: center;
     text-align: center;
   }
@@ -186,6 +196,7 @@
   }
   /*Good*/
   .Good {
+    font-size: 12px;
     text-align: center;
     color: #717070;
     margin-top: 1%;

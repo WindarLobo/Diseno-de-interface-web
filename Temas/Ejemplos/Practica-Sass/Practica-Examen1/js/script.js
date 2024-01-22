@@ -10,13 +10,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   menuToggle.addEventListener("change", function () {
     if (menuToggle.checked) {
-      separateDiv1.style.transform = "translatex(260px)";
+      separateDiv1.style.transform = "translatex(85%)";
       separateDiv2.style.transform = "translatex(260px)";
       separateDiv3.style.transform = "translatex(260px)";
       separateDiv4.style.transform = "translatex(260px)";
       separateDiv5.style.transform = "translatex(260px)";
       separateDiv6.style.transform = "translatex(260px)";
-      separateDiv7.style.transform = "translatex(80px)";
+      separateDiv7.style.transform = "translatex(38%)";
     } else {
       separateDiv1.style.transform = "translatex(0)";
       separateDiv2.style.transform = "translatex(0)";
