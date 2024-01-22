@@ -1,0 +1,211 @@
+@media screen and (max-width: 767px) {
+  /*menu principal*/
+  .form-control {
+    width: 46%;
+    position: relative;
+    left: 20%;
+    bottom: 2rem;
+  }
+
+  .fas.fa-magnifying-glass {
+    position: absolute;
+    bottom: 1.7rem;
+    left: 60%;
+    font-size: small;
+    transform: translateY(-50%);
+  }
+  .iconos {
+    font-size: 18px;
+    margin-left: 70%;
+    top: 2%;
+    display: flex;
+  }
+
+  .logo-menu {
+    font-size: 8px;
+    padding: 2px 4px;
+    height: 23%;
+    width: 30%;
+    margin-left: 0.7rem;
+    bottom: -0.3rem;
+    border-radius: 50%;
+  }
+  .chuky {
+    margin-top: -2%;
+    margin-left: 8%;
+  }
+  .chuky-link {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  /*menu flex*/
+  #btn-menu {
+    display: none;
+  }
+
+  .cont-menu {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cont-menu a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 100%;
+    padding: 1rem;
+  }
+  .cont-menu label {
+    top: 10%;
+  }
+  .copyright {
+    display: none;
+  }
+  .fa-solid {
+    margin-top: 1%; /* Espacio entre el icono y el texto */
+  }
+  /*card imagenes*/
+  .card-group {
+    display: flex;
+    justify-content: space-between; /* Distribuye las cards a lo largo del contenedor */
+  }
+
+  .card {
+    margin: 0;
+  }
+  .card-img {
+    width: 100%;
+    height: auto;
+  }
+  /* Capa 2*/
+
+  .capa-2 {
+    height: 4%;
+    margin-top: -0.3rem;
+  }
+
+  .hotel {
+    font-size: 13px;
+    margin-left: 1rem;
+  }
+  .ubicacion {
+    font-size: 13px;
+    margin-left: 10rem;
+  }
+
+  .badge {
+    font-size: 12px;
+    padding: 3.6%;
+  }
+
+  /*Sectiones-1*/
+
+  section {
+    margin-top: 5%;
+    margin: 2%;
+    width: 90%;
+    font-size: 12px;
+    padding: 3%;
+  }
+
+  .nav {
+    gap: 5px;
+    font-size: 11px;
+  }
+  .d-imgs {
+    margin-right: -9%;
+  }
+  .texto {
+    margin-left: -10%;
+    margin-top: 2rem;
+    font-size: 11px;
+  }
+  .d-imgs img {
+    width: 70px;
+    height: 60px;
+    margin-right: -2rem;
+  }
+  /*Seccion 2*/
+
+  .img-section {
+    margin-bottom: -3rem;
+  }
+  .imgs-2 img {
+    width: 70px;
+    height: 60px;
+    margin-top: 1rem;
+    border-radius: 50%;
+  }
+  .cliente {
+    font-size: 15px;
+    margin-left: 26%;
+    margin-top: -2rem;
+  }
+
+  .nombre {
+    margin-left: 28%;
+    margin-bottom: 3rem;
+  }
+  .puntuacion {
+    margin-top: -5rem;
+    margin-left: 80%;
+    font-size: 25px;
+  }
+  .comillas {
+    font-size: 40px;
+    padding: 3px 6px;
+    margin-top: -1.5rem;
+    margin-left: -1rem;
+  }
+  /*Seccion 3*/
+  .section-3 {
+    margin-top: 10%;
+    background-color: rgb(220, 217, 217);
+  }
+
+  /*link*/
+  .info:link,
+  .info:visited {
+    color: #e21d72;
+    font-size: large;
+    text-decoration: underline;
+  }
+  .info-total {
+    margin-top: 5rem;
+    align-items: center;
+    text-align: center;
+  }
+  .info:hover,
+  .info:active {
+    text-decoration: none;
+  }
+  /*Good*/
+  .Good {
+    text-align: center;
+    color: #717070;
+    margin-top: 1%;
+  }
+  /*Book*/
+
+  .BOOK {
+    background: linear-gradient(100deg, #e21d72, rgb(211, 90, 90));
+    color: #fff;
+    height: 3rem;
+    width: 13rem;
+    margin-left: 30%;
+    margin-top: 1rem;
+    font-size: 15px;
+    border: 0cqb;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .BOOK:hover {
+    color: #000;
+    background-color: #fff;
+  }
+}
