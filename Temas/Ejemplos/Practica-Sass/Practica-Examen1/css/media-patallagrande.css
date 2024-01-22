@@ -192,7 +192,7 @@
     width: 12%;
     height: auto;
     right: 17%;
-    top: 30rem;
+    margin-top: 38%;
     position: absolute;
   }
   .imgs-2 {
@@ -235,7 +235,7 @@
   .section-3 {
     width: 12%;
     right: 17%;
-    top: 48rem;
+    margin-top: 59%;
     position: absolute;
   }
   /*link*/

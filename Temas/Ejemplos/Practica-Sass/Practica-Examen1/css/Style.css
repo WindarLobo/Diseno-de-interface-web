@@ -87,8 +87,6 @@ a {
   background-color: #e21d72;
 }
 section {
-  width: 0;
-  height: auto;
   background-color: rgb(220, 217, 217);
 }
 .footer {
@@ -112,7 +110,6 @@ section {
 
 .d-imgs img {
   height: auto;
-  max-width: 100%;
   border-radius: 50%;
 }
 .cliente {
