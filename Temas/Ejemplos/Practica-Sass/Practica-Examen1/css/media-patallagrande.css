@@ -78,7 +78,7 @@
     color: #ffffff;
     border-left: 5px solid transparent;
     transition: all 400ms ease;
-    font-size: 17px;
+    font-size: 14px;
   }
   .cont-menu a:hover {
     border-left: 4px solid #e21d72;
@@ -128,22 +128,22 @@
   }
 
   .hotel {
-    font-size: 30px;
+    font-size: 23px;
     white-space: nowrap;
-    margin-left: 10rem;
+    margin-left: 11%;
   }
   .ubicacion {
-    font-size: 20px;
-    margin-left: 20rem;
+    font-size: 18px;
+    margin-left: 15rem;
+    white-space: nowrap;
     height: auto;
   }
   .fa-star {
-    white-space: nowrap;
-    font-size: 19px;
+    font-size: 15px;
   }
   .badge {
     white-space: nowrap;
-    font-size: 13px;
+    font-size: 11px;
     padding: 1.5%;
   }
 
@@ -151,9 +151,9 @@
 
   section {
     margin-left: 1rem;
-    width: 45%;
+    width: 35%;
     margin-top: 2%;
-    font-size: 15px;
+    font-size: 12px;
     padding: 1rem;
   }
   .footer {
@@ -166,7 +166,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 9px;
     white-space: nowrap;
-    margin-left: rem;
+    margin-left: -2rem;
   }
   .d-imgs {
     display: flex;
@@ -174,14 +174,15 @@
     text-align: center;
   }
   .texto {
-    margin-left: -1%;
-    margin-top: 8%;
-    font-size: 15px;
     white-space: nowrap;
+    margin-top: 3%;
+    margin-left: -2rem;
+    font-size: 12px;
   }
   .d-imgs img {
-    height: 4rem;
-    width: 4rem;
+    white-space: nowrap;
+    height: 2.5rem;
+    width: 2.5rem;
     border-radius: 50%;
     margin-right: -1rem;
   }
@@ -189,11 +190,10 @@
   /*Seccion 2*/
 
   .section-2 {
-    width: 12%;
-    height: auto;
-    right: 17%;
-    margin-top: 38%;
-    position: absolute;
+    width: 9.5rem;
+    margin-left: 65%;
+    position: static;
+    margin-top: -31rem;
   }
   .imgs-2 {
     display: flex;
@@ -233,10 +233,10 @@
   }
   /*Seccion 3*/
   .section-3 {
-    width: 12%;
-    right: 17%;
-    margin-top: 59%;
-    position: absolute;
+    width: 9.5rem;
+    margin-left: 65%;
+    position: static;
+    margin-top: 1%;
   }
   /*link*/
   .info:link,
@@ -244,7 +244,7 @@
     color: #e21d72;
     font-size: large;
     text-decoration: underline;
-    margin-left: 72%;
+    margin-left: 68%;
   }
   .info-total {
     margin-top: 1rem;
@@ -259,10 +259,10 @@
     position: absolute;
     text-align: center;
     color: #717070;
-    margin-top: 35%;
-    margin-left: 80%;
+    margin-top: 34%;
+    margin-left: 78%;
     font-size: 15px;
-    padding: 5%;
+    padding: 4rem;
   }
   /*Book*/
 
@@ -271,9 +271,9 @@
     background: linear-gradient(100deg, #e21d72, rgb(122, 26, 93));
     color: #fff;
     padding: 10px 25px;
-    height: auto;
+
     left: 84%;
-    margin-top: -28rem;
+    margin-top: -25rem;
     font-size: 13px;
     border-radius: 50px;
     cursor: pointer;
