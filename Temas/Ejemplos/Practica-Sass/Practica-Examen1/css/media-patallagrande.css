@@ -1,4 +1,4 @@
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 992px) {
   /*menu principal*/
   .form-control {
     width: 50%;
@@ -208,7 +208,7 @@
   .cliente {
     margin-top: 5rem;
     font-size: small;
-    margin-left: -2.8rem;
+    margin-left: -2rem;
   }
 
   .nombre {
