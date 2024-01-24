@@ -2,6 +2,7 @@
   .cont-menu {
     display: flex;
   }
+
   #btn-menu {
     display: none;
   }

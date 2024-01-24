@@ -2,6 +2,7 @@
   #btn-menu {
     display: none;
   }
+
   .logo {
     pointer-events: none;
   }
@@ -131,7 +132,7 @@
     color: #e21d72;
     font-size: large;
     text-decoration: underline;
-    margin-left: 38rem;
+    margin-left: 35rem;
   }
 
   .info:hover,
@@ -139,11 +140,10 @@
     text-decoration: none;
   }
   .Good {
-    position: absolute;
     text-align: center;
     color: #717070;
     margin-top: -35rem;
-    margin-left: 75%;
+    margin-left: 78%;
     font-size: 15px;
     padding: 2rem;
   }
@@ -156,7 +156,7 @@
     padding: 10px 25px;
     height: auto;
     margin-left: 80%;
-    margin-top: -25rem;
+    margin-top: -1rem;
     font-size: 13px;
     border-radius: 50px;
     cursor: pointer;

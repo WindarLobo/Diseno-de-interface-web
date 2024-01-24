@@ -8,15 +8,20 @@ document.addEventListener("DOMContentLoaded", function () {
   var separateDiv6 = document.querySelector(".separate-div-6");
   var separateDiv7 = document.querySelector(".separate-div-7");
 
-  menuToggle.addEventListener("change", function () {
+  function applyTransform() {
+    if (window.innerWidth <= 991) {
+      // ajusta el valor según tu necesidad
+      return; // Evitar transformaciones en pantallas pequeñas
+    }
+
     if (menuToggle.checked) {
-      separateDiv1.style.transform = "translatex(220px)";
-      separateDiv2.style.transform = "translatex(220px)";
-      separateDiv3.style.transform = "translatex(220px)";
-      separateDiv4.style.transform = "translatex(220px)";
-      separateDiv5.style.transform = "translatex(220px)";
-      separateDiv6.style.transform = "translatex(220px)";
-      separateDiv7.style.transform = "translatex(220px)";
+      separateDiv1.style.transform = "translatex(230px)";
+      separateDiv2.style.transform = "translatex(230px)";
+      separateDiv3.style.transform = "translatex(230px)";
+      separateDiv4.style.transform = "translatex(230px)";
+      separateDiv5.style.transform = "translatex(230px)";
+      separateDiv6.style.transform = "translatex(230px)";
+      separateDiv7.style.transform = "translatex(230px)";
     } else {
       separateDiv1.style.transform = "translatex(0)";
       separateDiv2.style.transform = "translatex(0)";
@@ -26,5 +31,10 @@ document.addEventListener("DOMContentLoaded", function () {
       separateDiv6.style.transform = "translatex(0)";
       separateDiv7.style.transform = "translatex(0)";
     }
-  });
+  }
+
+  menuToggle.addEventListener("change", applyTransform);
+
+  // Aplicar transformaciones cuando cambia el tamaño de la ventana
+  window.addEventListener("resize", applyTransform);
 });
