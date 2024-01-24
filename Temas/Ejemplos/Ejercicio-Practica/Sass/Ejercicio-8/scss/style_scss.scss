@@ -1,0 +1,91 @@
+// IMPORTS ************************************************************************************************************/
+@import url("https://fonts.googleapis.com/css?family=Calistoga|Roboto:400,700&display=swap");
+@import "./Archivo_variables.scss";
+body {
+  font: map-get($font-weights, "regular") $font-size $font-family-cuerpo;
+  margin: 0 auto;
+  max-width: $max-width;
+  min-width: $min-width;
+}
+
+@include fuente-titulos;
+
+header {
+  padding: 1rem;
+  display: flex;
+  img {
+    height: 8rem;
+  }
+  div {
+    text-align: center;
+    width: 90%;
+    padding: 1rem 0 0 0;
+  }
+  p {
+    margin: $margin-default;
+    span {
+      cursor: pointer;
+    }
+  }
+}
+
+nav ul {
+  @include ul-horizontal;
+  margin: 0.5rem 0 0 0;
+  text-align: center;
+  justify-content: space-between;
+  li {
+    width: 12%;
+    padding: 1rem 0;
+    a {
+      text-decoration: none;
+      &:hover {
+        font-weight: map-get($font-weights, "bold");
+      }
+    }
+  }
+}
+
+div.contenedor {
+  display: flex;
+}
+
+section {
+  width: 69%;
+  margin: 0.5rem 1% 0 0;
+  padding: 1% 1% 0 1%;
+  article {
+    margin: 0 0 0.5rem 0;
+    padding: 1rem;
+    img {
+      height: 7rem;
+      float: left;
+    }
+    div {
+      text-align: center;
+      height: 7rem;
+      h3 {
+        margin: $margin-default;
+        padding-top: 2.5rem;
+      }
+      h4 {
+        margin: $margin-default;
+      }
+    }
+    p {
+      margin: 1rem 0 0 0;
+    }
+  }
+}
+
+aside {
+  width: 26%;
+  padding: 1%;
+  margin: 0.5rem 0 0 0;
+}
+
+footer {
+  margin: 0.5rem 0 0 0;
+  padding: 0.5rem;
+  text-align: center;
+}

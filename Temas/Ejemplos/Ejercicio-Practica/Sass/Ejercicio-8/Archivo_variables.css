@@ -1,0 +1,159 @@
+.fondo-cuerpo-light {
+  background-color: #000;
+}
+
+.color-cuerpo-light {
+  color: #000;
+}
+
+.fondo-destacado-light {
+  background-color: #fff;
+}
+
+.color-destacado-light {
+  color: #fff;
+}
+
+.fondo-header-light {
+  background-color: #4e6379;
+}
+
+.color-header-light {
+  color: #4e6379;
+}
+
+.fondo-nav-light {
+  background-color: #ddc3d2;
+}
+
+.color-nav-light {
+  color: #ddc3d2;
+}
+
+.fondo-section-light {
+  background-color: rgba(191, 201, 51, 0.14);
+}
+
+.color-section-light {
+  color: rgba(191, 201, 51, 0.14);
+}
+
+.fondo-article-light {
+  background-color: rgba(12, 121, 39, 0.08);
+}
+
+.color-article-light {
+  color: rgba(12, 121, 39, 0.08);
+}
+
+.fondo-aside-light {
+  background-color: rgba(79, 195, 247, 0.18);
+}
+
+.color-aside-light {
+  color: rgba(79, 195, 247, 0.18);
+}
+
+.fondo-footer-light {
+  background-color: rgba(150, 34, 30, 0.42);
+}
+
+.color-footer-light {
+  color: rgba(150, 34, 30, 0.42);
+}
+
+.fondo-enlace-light {
+  background-color: #4e6379;
+}
+
+.color-enlace-light {
+  color: #4e6379;
+}
+
+.fondo-body-light {
+  background-color: #fff;
+}
+
+.color-body-light {
+  color: #fff;
+}
+
+.fondo-cuerpo-dark {
+  background-color: #fff;
+}
+
+.color-cuerpo-dark {
+  color: #fff;
+}
+
+.fondo-destacado-dark {
+  background-color: #000;
+}
+
+.color-destacado-dark {
+  color: #000;
+}
+
+.fondo-header-dark {
+  background-color: #d2dde9;
+}
+
+.color-header-dark {
+  color: #d2dde9;
+}
+
+.fondo-nav-dark {
+  background-color: #e42695;
+}
+
+.color-nav-dark {
+  color: #e42695;
+}
+
+.fondo-section-dark {
+  background-color: rgba(39, 41, 8, 0.87);
+}
+
+.color-section-dark {
+  color: rgba(39, 41, 8, 0.87);
+}
+
+.fondo-article-dark {
+  background-color: rgba(12, 121, 39, 0.884);
+}
+
+.color-article-dark {
+  color: rgba(12, 121, 39, 0.884);
+}
+
+.fondo-aside-dark {
+  background-color: rgba(79, 194, 247, 0.925);
+}
+
+.color-aside-dark {
+  color: rgba(79, 194, 247, 0.925);
+}
+
+.fondo-footer-dark {
+  background-color: rgb(150, 34, 30);
+}
+
+.color-footer-dark {
+  color: rgb(150, 34, 30);
+}
+
+.fondo-enlace-dark {
+  background-color: #d2dde9;
+}
+
+.color-enlace-dark {
+  color: #d2dde9;
+}
+
+.fondo-body-dark {
+  background-color: #000;
+}
+
+.color-body-dark {
+  color: #000;
+}/*# sourceMappingURL=Archivo_variables.css.map */

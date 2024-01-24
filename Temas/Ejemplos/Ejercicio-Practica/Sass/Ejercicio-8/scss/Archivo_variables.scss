@@ -1,0 +1,83 @@
+// VARIABLES DE FUENTES /////////////////////////////////////////////////////////////////////////////////
+
+$font-size: 1rem;
+$font-family-cuerpo: "Roboto", sans-serif;
+$font-family-titulos: "Calistoga", cursive;
+$font-weights: (
+  "regular": 400,
+  "bold": 700,
+);
+
+$max-width: 1200px;
+$min-width: 600px;
+
+$margin-default: 0;
+$padding-default: 0;
+
+@mixin fuente-titulos {
+  @for $i from 1 through 5 {
+    h#{$i} {
+      font-family: $font-family-titulos;
+      font-weight: map-get($font-weights, "regular");
+    }
+  }
+}
+
+//Lista horizontal
+@mixin ul-horizontal {
+  list-style: none;
+  display: flex;
+  padding: $padding-default;
+  margin: $margin-default;
+  li {
+    padding: $padding-default;
+    margin: $margin-default;
+  }
+}
+
+// VARIABLES DE COLORES /////////////////////////////////////////////////////////////////////////////////
+
+$colores-light: (
+  "cuerpo": #000,
+  "destacado": #fff,
+  "header": #4e6379,
+  "nav": #ddc3d2,
+  "section": rgba(191, 201, 51, 0.14),
+  "article": rgba(12, 121, 39, 0.08),
+  "aside": rgba(79, 195, 247, 0.18),
+  "footer": rgba(150, 34, 30, 0.42),
+  "enlace": #4e6379,
+  "body": #fff,
+);
+
+$colores-dark: (
+  "cuerpo": #fff,
+  "destacado": #000,
+  "header": #d2dde9,
+  "nav": #e42695,
+  "section": rgba(39, 41, 8, 0.87),
+  "article": rgba(12, 121, 39, 0.884),
+  "aside": rgba(79, 194, 247, 0.925),
+  "footer": rgb(150, 34, 30),
+  "enlace": #d2dde9,
+  "body": #000,
+);
+
+//Clases de fondos y colores de texto para poder cambiar de tema más facilmente
+@each $nombre, $color in $colores-light {
+  .fondo-#{$nombre}-light {
+    background-color: $color;
+  }
+  .color-#{$nombre}-light {
+    color: $color;
+  }
+}
+
+@each $nombre, $color in $colores-dark {
+  .fondo-#{$nombre}-dark {
+    background-color: $color;
+  }
+  .color-#{$nombre}-dark {
+    color: $color;
+  }
+}
