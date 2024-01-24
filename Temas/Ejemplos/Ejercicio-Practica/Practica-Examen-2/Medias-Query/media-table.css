@@ -1,0 +1,169 @@
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #btn-menu {
+    display: none;
+  }
+  .logo {
+    pointer-events: none;
+  }
+  .cont-menu a:hover {
+    padding: 1.2rem;
+  }
+  .container-menu {
+    position: flex;
+    text-align: center;
+    background-color: #000;
+    padding: 1rem;
+  }
+  .cont-menu a {
+    font-size: 16px;
+    cursor: pointer;
+    margin: 3%;
+    color: #ffffff;
+  }
+
+  .cont-menu label {
+    color: #fff;
+    display: none;
+  }
+  .copyright {
+    display: none;
+  }
+  .ubicacion {
+    margin-left: 18rem;
+  }
+  /*Sectiones-1*/
+
+  section {
+    background-color: rgb(220, 217, 217);
+    margin-left: 1rem;
+    width: 26rem;
+    margin-top: 5%;
+    font-size: 13px;
+    padding: 1rem;
+  }
+  .footer {
+    padding: 3rem;
+    border-top: 1px solid #b3b3b3;
+  }
+  .nav {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9px;
+    white-space: nowrap;
+    margin-left: -3rem;
+  }
+  .d-imgs {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .texto {
+    margin-left: -19%;
+    margin-top: 8%;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  .d-imgs img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    margin-right: -1rem;
+  }
+  /*Seccion 2*/
+
+  .section-2 {
+    width: 10rem;
+    height: auto;
+    right: 11rem;
+    margin-top: -33rem;
+    position: absolute;
+  }
+  .imgs-2 {
+    display: flex;
+  }
+
+  .imgs-2 img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    margin-top: 3rem;
+    margin-left: -15px;
+  }
+  .cliente {
+    margin-top: 5rem;
+    font-size: small;
+    margin-left: -2rem;
+  }
+
+  .nombre {
+    font-weight: 500;
+    margin-top: 25%;
+    font-weight: 600;
+  }
+  .puntuacion {
+    position: absolute;
+    margin-top: -5rem;
+    margin-left: 6rem;
+    font-size: x-large;
+    color: #e21d72;
+  }
+  .comillas {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 15px 5px;
+    height: 1.3rem;
+    width: 1.5rem;
+    margin-top: -2.8rem;
+    margin-left: -1rem;
+  }
+  /*Seccion 3*/
+  .section-3 {
+    width: 10rem;
+    height: auto;
+    right: 11rem;
+    margin-top: -16rem;
+    position: absolute;
+  }
+  /*link*/
+  .info:link,
+  .info:visited {
+    color: #e21d72;
+    font-size: large;
+    text-decoration: underline;
+    margin-left: 38rem;
+  }
+
+  .info:hover,
+  .info:active {
+    text-decoration: none;
+  }
+  .Good {
+    position: absolute;
+    text-align: center;
+    color: #717070;
+    margin-top: -35rem;
+    margin-left: 75%;
+    font-size: 15px;
+    padding: 2rem;
+  }
+  /*Book*/
+
+  .BOOK {
+    position: absolute;
+    background: linear-gradient(100deg, #e21d72, rgb(122, 26, 93));
+    color: #fff;
+    padding: 10px 25px;
+    height: auto;
+    margin-left: 80%;
+    margin-top: -25rem;
+    font-size: 13px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+  }
+  .BOOK:hover {
+    color: #000;
+    background-color: #fff;
+  }
+}
