@@ -30,7 +30,6 @@ ul {
 .form-control {
   width: 16rem;
   padding-right: 2.5rem;
-
   color: #717070;
 }
 
@@ -40,6 +39,31 @@ ul {
   left: 11rem;
   transform: translatex(3rem);
   font-size: small;
+}
+
+.logo-menu-1 {
+  background-color: #e21d72;
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+  font-size: 8px;
+  padding: 2px 4px;
+  height: 23%;
+  width: 30%;
+  right: -32px;
+  border-radius: 50%;
+}
+.logo-menu-2 {
+  background-color: #e21d72;
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+  font-size: 8px;
+  padding: 2px 4px;
+  height: 23%;
+  width: 30%;
+  right: -40px;
+  border-radius: 50%;
 }
 /* Nav */
 .btn-menu {

@@ -1,0 +1,321 @@
+/*
+  ========================================
+  Reset & Basic styles
+  ========================================
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #fff;
+}
+.container-f {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+.main-header {
+  width: 100%;
+  min-width: 1150px;
+  height: 70px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  position: absolute;
+  background-color: #ffffff;
+  top: 0;
+}
+
+.logo {
+  width: 124px;
+  height: 70px;
+  float: left;
+  background: transparent
+    url("https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-color.svg")
+    center center no-repeat;
+  background-size: 124px 33px;
+}
+.logo a {
+  text-indent: -999em;
+  height: 70px;
+  display: block;
+}
+
+.main-nav,
+.main-nav li {
+  float: left;
+}
+.main-nav {
+  margin-left: 170px;
+}
+.main-nav a {
+  line-height: 68px;
+  display: block;
+  padding: 0 30px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+}
+.main-nav a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.account {
+  float: right;
+}
+.account .btn {
+  display: inline-block;
+  width: 84px;
+  height: 36px;
+  line-height: 32px;
+  border-radius: 20px;
+  background: #03407c;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-top: 15px;
+  border: 2px solid #fff;
+  transition: all 0.2s ease;
+}
+.account .btn-secondary {
+  color: #242121;
+  background: none;
+  border: 2px solid #0b0b0b;
+}
+.account .btn:hover {
+  background: #ccc;
+  color: #242121;
+}
+.account .btn-secondary:hover {
+  background: none;
+  border-color: #ccc;
+}
+
+/*
+  ========================================
+  Hero
+  ========================================
+*/
+.hero {
+  min-width: 1150px;
+  height: 600px;
+  background: #333
+    url("https://www.paypalobjects.com/digitalassets/c/website/marketing/na/us/home/hero-back-to-school.jpg")
+    center center no-repeat;
+  background-size: cover;
+  text-align: center;
+  overflow: auto;
+}
+.hero h2 {
+  color: #fff9f9;
+  margin-top: 160px;
+  font-size: 70px;
+  line-height: 60px;
+  letter-spacing: -2px;
+  font-style: italic;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+.hero p {
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #fff9f9;
+}
+.btn {
+  float: left;
+}
+.hero .btn {
+  display: inline-block;
+  width: 250px;
+  height: 50px;
+  line-height: 48px;
+  border-radius: 20px;
+  background: #0070ba;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 auto 8px;
+  border: 2px solid #0070ba;
+
+  transition: all 0.2s ease;
+}
+.hero .btn-secondary {
+  border-color: #fff;
+  background: none;
+}
+.hero .btn:hover {
+  background: #005ea6;
+}
+.hero .btn-secondary:hover {
+  border-color: #ccc;
+  background: none;
+}
+.d {
+  margin: 5px auto;
+  width: 100%;
+  height: 300px;
+  font-size: 11px;
+  border: 1px solid #ccc;
+  padding: 0;
+  border-radius: 15px;
+  background-color: #0091ff;
+}
+.d .img {
+  background: url("https://www.paypalobjects.com/marketing/web23/US/en/rebrand/Home/Redesigned-Home/Consumer/mkt=US-page=homepage-consumer-component=card-content-section-size=base.png?quality=75&width=2100&format=webp")
+    center right no-repeat;
+  width: 32%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background-size: cover; /* Ajusta según sea necesario */
+  background-position: center right; /* Ajusta según sea necesario */
+  display: block;
+  height: 100%;
+  margin-left: 50rem;
+  margin-top: -17rem;
+}
+.d .h {
+  margin-top: 80px;
+  margin-left: 35px;
+  font-size: 25px;
+}
+.p {
+  margin: 2%;
+  margin-left: 35px;
+  font-size: 18px;
+}
+.i {
+  margin: 15px auto;
+  width: 100%;
+  height: 300px;
+  font-size: 11px;
+  padding: 0;
+  background-color: #ffffff;
+}
+.im {
+  background: url("https://www.paypalobjects.com/marketing/web23/US/en/rebrand/Home/Redesigned-Home/Consumer/Pay%20Later/homepage-03-paylater-poster.jpg?quality=75&width=1800&format=webp")
+    center right no-repeat;
+  width: 30%;
+  border-radius: 15px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background-size: cover; /* Ajusta según sea necesario */
+  background-position: center left; /* Ajusta según sea necesario */
+  display: block;
+  height: 100%;
+  margin-left: 2rem;
+}
+.hh {
+  margin-left: 30rem;
+  color: #222;
+  font-size: 25px;
+  margin-top: -15rem;
+}
+.pp {
+  margin-left: 30rem;
+  color: #222;
+  margin-top: 1rem;
+  font-size: 19px;
+}
+.ddd {
+  margin: 5px auto;
+  width: 100%;
+  height: 300px;
+  font-size: 11px;
+  padding: 0;
+  background-color: #ffffff;
+}
+.ddd .imgg {
+  background: url("https://www.paypalobjects.com/marketing/web23/US/en/rebrand/Home/Redesigned-Home/Consumer/mkt=US-page=homepage-consumer-component=rewards-size=base.jpg?quality=75&width=1800&format=webp")
+    center right no-repeat;
+  width: 30%;
+  border-radius: 15px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background-size: cover; /* Ajusta según sea necesario */
+  background-position: center right; /* Ajusta según sea necesario */
+  display: block;
+  height: 100%;
+  margin-left: 50rem;
+  margin-top: -15rem;
+}
+.ddd .hhh {
+  margin-top: 80px;
+  margin-left: 35px;
+  font-size: 25px;
+  color: #222;
+}
+.ppp {
+  margin: 2%;
+  color: #222;
+  margin-left: 35px;
+  font-size: 19px;
+}
+
+.ddd .btn2 {
+  display: inline-block;
+  width: 250px;
+  height: 50px;
+  line-height: 48px;
+  border-radius: 20px;
+  background: #14007a;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-top: -8rem;
+  transition: all 0.2s ease;
+}
+.button {
+  align-items: center;
+  text-align: center;
+}
+.dddd {
+  margin: 35px auto;
+  width: 100%;
+  height: 300px;
+  font-size: 11px;
+  padding: 0;
+  background-color: #e6eaf3;
+  border-radius: 10px;
+}
+.dddd .imggg {
+  background: url("https://www.paypalobjects.com/marketing/web23/US/en/rebrand/Home/Redesigned-Home/Consumer/Send/homepage-05-send-poster-v2.jpg?quality=75&width=2100&format=webp")
+    center right no-repeat;
+  width: 30%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center right;
+  display: block;
+  height: 100%;
+  margin-left: 50rem;
+  margin-top: -15rem;
+}
+.hhhh {
+  margin-left: 35px;
+
+  font-size: 25px;
+  color: #222;
+}
+.pppp {
+  color: #222;
+  margin-left: 35px;
+  font-size: 19px;
+  margin: 2rem;
+}
