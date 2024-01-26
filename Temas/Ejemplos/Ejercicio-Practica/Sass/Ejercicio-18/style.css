@@ -1,0 +1,21 @@
+@charset "UTF-8";
+ul {
+  list-style-type: none; /*También list-style*/
+}
+
+a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  background-color: #3498db;
+  border-radius: 5px;
+  float: left;
+}
+
+a:hover {
+  background-color: #1f587d;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}/*# sourceMappingURL=style.css.map */

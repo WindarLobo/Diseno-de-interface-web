@@ -1,0 +1,47 @@
+.sass {
+  width: 150px;
+  height: 150px;
+  color: #fff;
+  padding: 0.5em;
+  transition: 150ms ease transform;
+}
+.sass:hover {
+  transform: scale(1.2);
+}
+.sass--color {
+  fill: #c69;
+}
+.sass--invert {
+  fill: #fff;
+  color: black;
+}
+
+body {
+  background: #dadbdf;
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 460px;
+  margin: 0 auto;
+}
+
+footer,
+h1 {
+  text-align: center;
+}
+
+footer {
+  color: gray;
+  font-size: 0.7em;
+  margin-top: 1em;
+}
+
+a {
+  color: #cd669a;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

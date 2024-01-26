@@ -1,0 +1,229 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", "sans-serif";
+  overflow: hidden;
+}
+.container {
+  overflow-x: auto;
+  display: flex;
+  width: 70%;
+  scroll-behavior: smooth;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* hide the scrollbar and retain it's functionality */
+.container::-webkit-scrollbar {
+  display: none;
+}
+.slider {
+  display: flex;
+  transition: margin 0.2s ease-in-out;
+}
+
+.box {
+  height: 220px;
+  width: 200px;
+  flex-shrink: 0;
+  margin-right: 4px;
+  overflow: hidden; /* Asegura que las imágenes no sobresalgan de la caja */
+}
+
+.box img {
+  width: 100%; /* Ajusta la anchura de la imagen al 100% de la caja */
+  height: 100%; /* Ajusta la altura de la imagen al 100% de la caja */
+  object-fit: cover; /* Ajusta la imagen sin distorsión */
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 20px;
+  color: green;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  margin-top: 78px;
+}
+.prev {
+  left: 10%;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 10%;
+  border-radius: 3px 0 0 3px;
+  margin-right: 5.5px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+a {
+  color: #262626;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container-1 {
+  width: 100%;
+  margin: auto;
+}
+
+/* Nav */
+.btn-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 20 0;
+  font-size: 17px;
+  background-color: rgb(220, 217, 217);
+}
+
+.btn-menu ul.main-menu {
+  margin-left: 20px;
+}
+
+/*menu flex*/
+
+.cont-menu a {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 100%;
+  padding: 1rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.cont-menu a:hover {
+  border-left-color: #e21d72;
+  background-color: #e21d72;
+}
+.cont-menu {
+  font-size: 15px;
+  align-items: center;
+  justify-content: center;
+  transition: border-left-color 0.3s ease, background-color 0.3s ease;
+}
+
+.cont-menu label {
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .cont-menu {
+    display: flex;
+  }
+
+  #btn-menu {
+    display: none;
+  }
+  .container-menu {
+    background-color: #000;
+  }
+
+  .copyright {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  /*Menù lateral*/
+  #btn-menu {
+    display: none;
+  }
+
+  .container-menu {
+    position: absolute;
+    left: 10;
+    width: 10%;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+  }
+  #btn-menu:checked ~ .container-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  .cont-menu {
+    height: auto;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+    background: #272626;
+    opacity: 0.9;
+  }
+  #btn-menu:checked ~ .container-menu .cont-menu {
+    transform: translateX(0%);
+  }
+
+  .cont-menu a {
+    display: block;
+    text-decoration: none;
+    padding: 30px;
+    color: #ffffff;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+    font-size: 14px;
+  }
+  span {
+    font-weight: 600;
+    font-size: 17px;
+  }
+  .cont-menu a:hover {
+    border-left: 4px solid #e21d72;
+    background: #e21d72;
+  }
+  .cont-menu label {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .copyright {
+    font-size: 16px;
+    margin-top: 45rem;
+    text-align: center;
+    color: #fff;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #btn-menu {
+    display: none;
+  }
+
+  .cont-menu a:hover {
+    padding: 1.2rem;
+  }
+  .container-menu {
+    position: flex;
+    text-align: center;
+    background-color: #b21a1a;
+    padding: 1rem;
+  }
+  .cont-menu a {
+    font-size: 16px;
+    cursor: pointer;
+    margin: 3%;
+    color: #ffffff;
+  }
+
+  .cont-menu label {
+    color: #fff;
+    display: none;
+  }
+}

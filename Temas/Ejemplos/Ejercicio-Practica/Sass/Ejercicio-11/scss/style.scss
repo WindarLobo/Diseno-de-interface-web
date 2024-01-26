@@ -1,0 +1,28 @@
+// Define una variable para la cantidad de cajas que deseas crear
+$num-cajas: 10;
+// Define una lista de colores de fondo predefinidos
+$colores-fondo: #3498db, #27ae60, #e74c3c, #9b59b6, #f1c40f, #2ecc71, #e67e22,
+  #1abc9c, #34495e, #d35400;
+// Define una variable para el tamaño de cada caja
+$tamano-caja: 100px;
+// Estilos generales de las cajas
+.caja {
+  width: $tamano-caja;
+  height: $tamano-caja;
+  margin: 10px;
+  display: inline-block;
+}
+// Utiliza un bucle @for para generar cajas con colores de fondo diferentes
+@for $i from 1 through $num-cajas {
+  $color-fondo: nth(
+    $colores-fondo,
+    $i
+  ); // Obtiene un color de fondo de la lista
+  .caja-#{$i} {
+    background-color: $color-fondo;
+    // Aplicamos color de fondo más oscuro al pasar por encima el cursor
+    &:hover {
+      background-color: darken($color-fondo, 10%);
+    }
+  }
+}

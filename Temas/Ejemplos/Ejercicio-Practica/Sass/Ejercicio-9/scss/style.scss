@@ -1,0 +1,46 @@
+// Define variables para los colores de los botones
+$primary-color: #3498db;
+$success-color: #27ae60;
+$danger-color: #e74c3c;
+
+// Define un mapa para los estilos de los botones
+$button-styles: (
+  primary: (
+    background-color: $primary-color,
+    color: white,
+  ),
+  success: (
+    background-color: $success-color,
+    color: white,
+  ),
+  danger: (
+    background-color: $danger-color,
+    color: white,
+  ),
+);
+// Estilos generales de los botones
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+// Estilos específicos para cada botón
+@each $button, $style in $button-styles {
+  .#{$button} {
+    background-color: map-get($style, background-color);
+    color: map-get($style, color);
+
+    &:hover {
+      background-color: darken(map-get($style, background-color), 10%);
+    }
+  }
+}

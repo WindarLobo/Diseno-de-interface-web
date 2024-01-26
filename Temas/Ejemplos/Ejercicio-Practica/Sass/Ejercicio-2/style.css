@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 576px) {
+  #container {
+    font-family: Verdana, sans-serif;
+    color: darkred;
+    background-color: #250000;
+    font-size: 14px;
+    margin: 14px;
+    padding: 28px;
+    line-height: 21px;
+    border: 5px solid darkred;
+    background-color: rgb(200, 242, 245);
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  #container {
+    font-family: Verdana, sans-serif;
+    color: darkblue;
+    background-color: #000025;
+    font-size: 16px;
+    margin: 16px;
+    padding: 32px;
+    line-height: 24px;
+    border: 5px solid darkblue;
+    background-color: rgb(240, 242, 200);
+  }
+}
+@media screen and (min-width: 768px) {
+  #container {
+    font-family: Verdana, sans-serif;
+    color: darkgreen;
+    background-color: black;
+    font-size: 20px;
+    margin: 20px;
+    padding: 40px;
+    line-height: 30px;
+    border: 5px solid darkgreen;
+    background-color: rgb(255, 255, 255);
+  }
+}/*# sourceMappingURL=style.css.map */

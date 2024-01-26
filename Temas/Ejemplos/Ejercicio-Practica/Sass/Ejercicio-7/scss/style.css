@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700");
+/* ESTILOS GLOBALES ***************************************************************************************************/
+html {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+body {
+  font: 400 1rem "Nunito", sans-serif;
+  color: rgb(30, 30, 30);
+  margin: 0.5em;
+}
+body h1 {
+  font: 700 300% "Nunito", sans-serif;
+  margin: 0;
+}
+body h2 {
+  font: 700 200% "Nunito", sans-serif;
+  margin: 0;
+}
+body h3 {
+  font: 700 150% "Nunito", sans-serif;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+  }
+}
+a {
+  text-decoration: none;
+  color: rgb(30, 30, 30);
+}
+
+/* HEADER *************************************************************************************************************/
+header {
+  text-align: center;
+  background-color: #eee;
+  padding: 0.5em;
+}
+header img {
+  width: 10%;
+  float: left;
+}
+header h1 {
+  width: 90%;
+  color: rgb(55, 0, 0);
+}
+header h2 {
+  width: 90%;
+  color: rgb(0, 60, 0);
+}
+@media (max-width: 768px) {
+  header img {
+    width: 5em;
+    float: none;
+  }
+  header h1,
+  header h2 {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* NAV ****************************************************************************************************************/
+nav {
+  background-color: #eee;
+  padding: 0.1em;
+  margin: 0.5em 0 0 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0;
+  padding: 0.2em;
+  font: 700 110% "Nunito", sans-serif;
+}
+nav ul a {
+  font-weight: 400;
+}
+nav ul a:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  nav {
+    margin: 0;
+  }
+  ul li {
+    width: 100%;
+  }
+}
+/* SECTION ************************************************************************************************************/
+section {
+  margin: 0.5em 0 0 0;
+}
+section article {
+  width: 33%;
+  display: inline-block;
+  min-height: 16em;
+}
+section article img {
+  width: 25%;
+  float: left;
+  padding: 0 1em 0 0;
+}
+section article div {
+  width: 65%;
+  float: left;
+  padding: 1em 1em 0 0;
+}
+section article:nth-child(1) {
+  background-color: rgba(230, 18, 200, 0.5);
+}
+section article:nth-child(2) {
+  background-color: rgba(82, 195, 238, 0.5);
+}
+section article:nth-child(3) {
+  background-color: rgba(21, 222, 7, 0.5);
+}
+section article:nth-child(4) {
+  background-color: rgba(155, 13, 85, 0.5);
+}
+section article:nth-child(5) {
+  background-color: rgba(224, 75, 90, 0.5);
+}
+section article:nth-child(6) {
+  background-color: rgba(25, 255, 67, 0.5);
+}
+@media (max-width: 992px) {
+  section article {
+    width: 49.7%;
+  }
+}
+@media (max-width: 768px) {
+  section article {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    margin: 0;
+  }
+}
+/* FOOTER *************************************************************************************************************/
+footer {
+  margin: 0.5em 0 0 0;
+  text-align: center;
+}
+footer div {
+  background-color: #eee;
+  padding: 0.2em 0 0 0;
+}
+footer div img {
+  width: 3em;
+}
+footer p {
+  margin: 0.5em 0 0 0;
+  background-color: #eee;
+  padding: 0.1em 0;
+  font: 300 80% "Nunito", sans-serif;
+}
+footer p a:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  footer {
+    margin: 0;
+  }
+  footer p {
+    margin: 0;
+  }
+}/*# sourceMappingURL=style.css.map */

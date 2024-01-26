@@ -1,0 +1,6 @@
+.content-box {
+  width: 300px;
+  height: 150px;
+  border: 1px solid #ccc;
+  overflow-y: scroll; /* Agregar desplazamiento vertical si el contenido desborda */
+}

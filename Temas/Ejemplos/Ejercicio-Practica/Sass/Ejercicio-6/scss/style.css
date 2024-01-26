@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700");
+/* ESTILOS GLOBALES ***************************************************************************************************/
+* {
+  margin: 0 auto;
+  padding: 5px;
+}
+
+html {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+body {
+  font: 400 1rem "Nunito", sans-serif;
+  color: rgb(30, 30, 30);
+}
+
+h1 {
+  font: 700 300% "Nunito", sans-serif;
+}
+h2 {
+  font: 700 200% "Nunito", sans-serif;
+}
+h3 {
+  font: 700 150% "Nunito", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(30, 30, 30);
+}
+
+/* HEADER *************************************************************************************************************/
+header {
+  text-align: center;
+  background-color: #eee;
+  padding: 0.5em;
+}
+header img {
+  width: 10%;
+  float: left;
+}
+header h1,
+header h2 {
+  width: 90%;
+  margin: 0;
+}
+
+/* NAV ****************************************************************************************************************/
+nav {
+  background-color: #eee;
+  padding: 0.1em;
+  margin: 0.5em 0 0 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0;
+  padding: 0.2em;
+  font: 700 110% "Nunito", sans-serif;
+}
+nav ul li a {
+  font-weight: 400;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+/* SECTION ************************************************************************************************************/
+section {
+  min-height: 25em;
+}
+
+/* FOOTER *************************************************************************************************************/
+footer {
+  text-align: center;
+}
+footer div {
+  background-color: #eee;
+  margin-bottom: 0.5em;
+  padding: 0.2em 0 0 0;
+}
+footer div img {
+  width: 3em;
+}
+footer p {
+  background-color: #eee;
+  margin: 0;
+  padding: 0.1em 0;
+  font: 300 80% "Nunito", sans-serif;
+}
+footer p a:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}/*# sourceMappingURL=style.css.map */

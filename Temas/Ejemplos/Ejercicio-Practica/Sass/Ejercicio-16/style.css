@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* Definición de propiedades personalizadas */
+:root {
+  --primary-color: #3498db; /* Color principal (azul) */
+  --secondary-color: white; /* Segundo color (blanco) */
+  --rounded-border: 10px; /* Radio de esquina para elementos */
+}
+
+/* Estilos para .custom-box */
+.custom-box {
+  background-color: var(--primary-color);
+  border-radius: var(--rounded-border);
+  padding: 20px;
+}
+
+/* Estilos para .custom-text */
+.custom-text {
+  color: var(--secondary-color);
+  font-size: 18px;
+}/*# sourceMappingURL=style.css.map */

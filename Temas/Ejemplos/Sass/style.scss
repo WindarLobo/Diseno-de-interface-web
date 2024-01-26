@@ -1,8 +1,0 @@
-@function suma($n1: 5, $n2: 5) {
-  @return $n1 + 2 * $n2;
-}
-
-//No se va a ver
-/* se va a ve rtal cual*/
-
-/* Interpolacion:2+2=#{sum($n2:10)}*/

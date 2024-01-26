@@ -1,0 +1,56 @@
+* {
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  display: inline-block;
+  border: 1px solid grey;
+}
+
+/* Ejemplo de sombra en una tarjeta */
+.card-shadow {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Ejemplo de gradiente de fondo */
+.card-gradient {
+  background: linear-gradient(to bottom, #3498db, #1f587d);
+  color: white;
+}
+
+/* Ejemplo de filtro en imagen */
+.filtered-image {
+  filter: brightness(80%) contrast(120%);
+}
+
+/* Estilo para tooltips */
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: brown;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: 125%; /* Posiciona el tooltip bajo del elemento */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s;
+}/*# sourceMappingURL=style.css.map */

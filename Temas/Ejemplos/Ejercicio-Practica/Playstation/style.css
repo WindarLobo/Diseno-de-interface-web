@@ -1,0 +1,494 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: black;
+  background-color: #fff;
+  font-size: 18px;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+.logo {
+  font-family: "Ropa Sans", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.custom-search-input {
+  position: relative;
+  width: 30rem;
+  padding: 0.5rem;
+  display: flex; /* Hace que los elementos se muestren en línea */
+}
+
+.form-control {
+  width: 17rem;
+  padding: 0.3rem;
+  border-radius: 10px;
+  border: 1px #717070 solid;
+  padding-right: 2rem;
+  color: #717070;
+  margin-right: -2rem; /* Compensa el padding-right para que el botón no se sobreponga */
+}
+
+.searchButton {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.fa-search {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav img {
+  width: 100%;
+  color: blue;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  color: #0070cc;
+}
+
+#arrow:hover {
+  color: #0070cc;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  height: 60px;
+  background-color: #fff;
+}
+
+.nav ul {
+  list-style: none;
+}
+
+.nav .nav-menu {
+  display: flex;
+}
+
+.nav ul li {
+  padding-left: 25px;
+}
+
+.nav .search {
+  margin-right: 5px;
+  border: 1px solid gray;
+  padding: 5px;
+}
+
+.fa-chevron-down {
+  color: gray;
+}
+
+.sample {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.sample-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.sample img {
+  width: 40%;
+}
+.ps4-logo {
+  background-image: url(//media.playstation.com/is/image/SCEA/playstation-5-evergreen-homepage-marquee-desktop-02-ps5-01jul20-en-us?$native_nt$);
+  background-position: center;
+  background-size: cover;
+  height: 450px;
+  width: 100%;
+}
+
+.playstation {
+  background-color: #363636;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-bottom: 20px;
+  padding: 2rem;
+}
+
+.playstation h4 {
+  font-size: 26px;
+}
+
+.playstation p {
+  flex: 1;
+  margin-left: 10px;
+  font-size: 15px;
+  line-height: 1.5rem;
+}
+
+.playstation-2 {
+  background-color: #1f1f1f;
+  opacity: 0.9;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.playstation-2 h2 {
+  font-size: 24px;
+}
+
+.playstation-2 p {
+  flex: 1;
+  margin-left: 5px;
+  font-size: 15px;
+  padding-top: 5px;
+}
+
+.btn {
+  background-color: #0070cc;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  font-size: 15px;
+}
+
+.btn:hover {
+  background-color: #0166b8;
+}
+
+.cards-2 .btn {
+  font-size: 18px;
+}
+
+.container-content {
+  display: flex;
+}
+
+.last {
+  background-image: url(//media.playstation.com/is/image/SCEA/the-last-of-us-part-ii-homepage-marquee-desktop-01-ps4-tm-02oct19?$native_nt$);
+  background-position: center;
+  background-size: cover;
+  height: 550px;
+  width: 100%;
+}
+
+.ps4-content {
+  line-height: 2rem;
+  padding: 20px;
+  justify-content: center;
+}
+
+.ps4-content h1 {
+  font-size: 34px;
+}
+
+.ghost {
+  background-image: url(//media.playstation.com/is/image/SCEA/ghost-of-tsuhima-marquee-12dec19?$native_nt$);
+  background-position: center;
+  background-size: cover;
+  height: 650px;
+  width: 100%;
+}
+
+.grid-container {
+  padding-top: 30px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 20px;
+}
+
+.grid-container p {
+  font-size: 15px;
+  color: #0070cc;
+  font-weight: bold;
+}
+
+.grid-container h2 {
+  font-size: 38px;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+}
+
+.cards-container {
+  width: 80%;
+  margin: auto;
+  margin-top: 5vh;
+}
+
+.container-gridd {
+  max-width: 1180px;
+  text-align: center;
+  margin: auto;
+}
+
+.section-padding .container-gridd {
+  text-align: left;
+}
+
+.grid-cards {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  line-height: 1.6;
+  margin-right: 3rem;
+}
+
+.section-padding {
+  padding: 4rem 0;
+}
+
+.section-padding img {
+  width: 100%;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+  margin-bottom: 40px;
+}
+
+.cards img,
+.cards-2 img {
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+.cards p {
+  font-size: 1rem;
+}
+.cards img:hover {
+  transform: scale(1.1);
+}
+
+.mb {
+  margin-bottom: 1rem;
+}
+
+/* .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+} */
+
+.grid-cards h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #363636;
+  margin-bottom: 1rem;
+}
+
+.grid-cards p {
+  color: #363636;
+  font-size: 1rem;
+}
+.grid-cards .large {
+  font-size: 2.5rem;
+  color: #363636;
+  font-family: "Roboto", sans-serif;
+}
+
+.grid-cards .btn {
+  background-color: #cd3d0f;
+  padding: 10px 20px;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.cards-container img {
+  width: 90%;
+}
+
+.final-fantasy {
+  background-image: url(//media.playstation.com/is/image/SCEA/marvels-iron-man-vr-homepage-marquee-desktop-01-ps4-26jun20-en-us?$native_nt$);
+  background-position: center;
+  background-size: cover;
+  height: 550px;
+  margin-top: 15vh;
+  width: 100%;
+}
+
+/* .cards-2 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    margin-bottom: 40px;
+}
+
+.cards-2 img {
+    width: 70%;
+}
+
+.cards-2 h3 {
+    font-size: 24px;
+}
+
+.cards-2 p {
+    font-size: 13px;
+    color: #0070cc;
+    padding: 10px 0;
+}
+
+.cards-2 .btn {
+    display: inline-block;
+    padding-top: 10px;
+} */
+
+.cards-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin-bottom: 40px;
+}
+
+.cards-2 img {
+  width: 80%;
+}
+
+.cards-2 .btn {
+  display: inline-block;
+}
+
+.cards-2 {
+  text-align: center;
+}
+
+.cards-2 h3 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 24px;
+}
+
+.cards-2 p {
+  font-size: 18px;
+  color: #0070cc;
+  font-weight: bold;
+}
+
+#error {
+  margin-top: 120px;
+}
+
+.resident {
+  background: url(//media.playstation.com/is/image/SCEA/resident-evil-3-homepage-marquee-desktop-01-ps4-03apr20-en-us?$native_nt$);
+  background-position: center;
+  background-size: cover;
+  height: 550px;
+  width: 100%;
+}
+
+.see:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 700px) {
+  /* .cards {
+        grid-template-columns: repeat(2,1fr);
+    } */
+
+  .cards-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-cards {
+    grid-template-columns: 1fr;
+    margin-left: 3rem;
+  }
+
+  .final-fantasy,
+  .last,
+  .ghost,
+  .ps4-logo {
+    width: 100%;
+    height: 300px;
+  }
+
+  .playstation,
+  .playstation-2 {
+    background-color: #1c1c1c;
+  }
+
+  .smb {
+    margin-bottom: 1rem;
+  }
+
+  span {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  /* .cards {
+        grid-template-columns: 1fr;
+        text-align: center;
+    } */
+
+  /* .playstation, .playstation-2 {
+        display: flex;
+        flex-direction: column;
+        
+    } */
+
+  .small-mb {
+    margin-top: 1rem;
+  }
+
+  .final-fantasy,
+  .last,
+  .ghost,
+  .ps4-logo {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media (max-width: 980px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 620px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .playstation,
+  .playstation-2 {
+    display: flex;
+    flex-direction: column;
+  }
+}

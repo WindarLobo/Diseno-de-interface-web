@@ -1,0 +1,14 @@
+.fixed-container {
+  width: 300px;
+  background-color: #3498db;
+  float: left;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.variable-container {
+  width: calc(100% - 200px);
+  background-color: #e74c3c;
+  float: left;
+  box-sizing: border-box;
+  padding: 20px;
+}

@@ -1,0 +1,60 @@
+// Variables
+$primary-color: #34495e;
+$secondary-color: #3498db;
+$font-family: Arial, sans-serif;
+$base-font-size: 16px;
+
+// Estilos generales
+body {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+  background-color: $primary-color;
+  color: white;
+}
+
+header {
+  background-color: $secondary-color;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  .section {
+    margin-bottom: 20px;
+    padding: 10%;
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #333;
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: $secondary-color;
+
+  p {
+    margin: 0;
+  }
+}

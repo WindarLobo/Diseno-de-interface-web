@@ -1,0 +1,10 @@
+/* Estiliza elementos con data-type="fruta" */
+li[data-type="fruta"] {
+  background-color: lightgreen;
+  color: white;
+}
+/* Estiliza elementos con data-type="verdura" */
+li[data-type="verdura"] {
+  background-color: orange;
+  color: black;
+}
