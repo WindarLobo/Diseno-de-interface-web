@@ -1,0 +1,15 @@
+.selector {
+  background-image: url("../img/Equipo1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  filter: grayscale(0);
+}
+.selector:hover {
+  border-color: coral;
+  filter: grayscale(100%);
+}/*# sourceMappingURL=style.css.map */

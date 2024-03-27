@@ -1,0 +1,11 @@
+@import "variables";
+
+@mixin image($image) {
+  background-image: url($image);
+}
+
+@each $key, $value in $images-map {
+  .#{$key} {
+    @include image($value);
+  }
+}

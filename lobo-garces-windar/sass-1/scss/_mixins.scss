@@ -1,0 +1,27 @@
+@import "_variables";
+
+@mixin image(
+  $img: $def_img,
+  $img-repeat: $def_img_repeat,
+  $img-size: $def_img_size,
+  $img-position: $def_img_position,
+  $border-radius: $def_border_radius,
+  $border-color: $def_border_color,
+  $border-width: $def_border_width,
+  $border-style: $def_border_style
+) {
+  background-image: $img;
+  background-repeat: $img-repeat;
+  background-size: $img-size;
+  background-position: $img-position;
+  border-radius: $border-radius;
+  border-color: $border-color;
+  border-width: $border-width;
+  border-style: $border-style;
+  filter: grayscale(0);
+
+  &:hover {
+    border-color: coral;
+    filter: grayscale(100%);
+  }
+}

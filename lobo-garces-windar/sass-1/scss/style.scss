@@ -1,0 +1,15 @@
+@import "_variables";
+@import "_mixins";
+
+.selector {
+  @include image(
+    $img: url("../img/Equipo1.jpg"),
+    $img-repeat: $def_img_repeat,
+    $img-size: $def_img_size,
+    $img-position: $def_img_position,
+    $border-radius: $def_border_radius,
+    $border-color: $def_border_color,
+    $border-width: $def_border_width,
+    $border-style: $def_border_style
+  );
+}
